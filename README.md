@@ -12,8 +12,8 @@
 
 `原始图像`
 
-![原始图像]()
+![原始图像](https://github.com/YLDarren/stitp/blob/master/%E6%B5%8B%E8%AF%95%E6%A0%B7%E6%9C%AC/%E6%A0%B7%E6%9C%AC/p5.png)
 
 `预处理后的图像`
 
-![预处理后的图像]()
+![预处理后的图像](https://github.com/YLDarren/stitp/blob/master/%E6%B5%8B%E8%AF%95%E6%A0%B7%E6%9C%AC/%E6%A0%B7%E6%9C%AC/1.png)
