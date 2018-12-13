@@ -7,8 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c907d1e7-54db-441d-84ae-deb3e6e79ef6" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn.edu.njupt/utils/opencvUtils/OpencvConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn.edu.njupt/utils/opencvUtils/OpencvConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn.edu.njupt/controller/CutImageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn.edu.njupt/controller/CutImageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn.edu.njupt/service/impl/ImageHandleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn.edu.njupt/service/impl/ImageHandleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn.edu.njupt/utils/uploadUtils/UploadUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn.edu.njupt/utils/uploadUtils/UploadUtils.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -21,20 +22,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="OpencvConfig.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn.edu.njupt/utils/opencvUtils/OpencvConfig.java">
+      <file leaf-file-name="ImageHandleServiceImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn.edu.njupt/service/impl/ImageHandleServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="18" column="59" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
+            <state relative-caret-position="408">
+              <caret line="57" column="8" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn.edu.njupt/utils/opencvUtils/Main.java">
+      <file leaf-file-name="CutImageController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn.edu.njupt/controller/CutImageController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="24" column="68" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="68" />
+            <state relative-caret-position="-15">
+              <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -94,11 +98,12 @@
         <option value="$PROJECT_DIR$/src/main/java/cn.edu.njupt/utils/opencvUtils/PreHandleUtils/PreHandleUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn.edu.njupt/utils/opencvUtils/CutUtils/CutUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn.edu.njupt/service/ImageHandleService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn.edu.njupt/controller/CutImageController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn.edu.njupt/service/impl/ImageHandleServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn.edu.njupt/utils/opencvUtils/ResizeUtils/ResizeUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn.edu.njupt/utils/opencvUtils/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn.edu.njupt/utils/opencvUtils/OpencvConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn.edu.njupt/utils/uploadUtils/UploadUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn.edu.njupt/controller/CutImageController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn.edu.njupt/service/impl/ImageHandleServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -198,17 +203,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="cn.edu.njupt" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stitp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="stitp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cn.edu.njupt" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-              <item name="opencvUtils" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -250,7 +245,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Main.testPre">
+  <component name="RunManager" selected="Tomcat Server.stitp">
     <configuration name="Snowflake" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cn.edu.njupt.utils.uploadUtils.Snowflake" />
       <module name="stitp" />
@@ -448,7 +443,7 @@
       <workItem from="1543231971790" duration="19947000" />
       <workItem from="1543559507771" duration="149000" />
       <workItem from="1543901232259" duration="4321000" />
-      <workItem from="1544709409385" duration="1433000" />
+      <workItem from="1544709409385" duration="3294000" />
     </task>
     <servers />
   </component>
@@ -471,9 +466,12 @@
     <history-entry file="Main_testPre - 2018.12.13 at 22h 12m 16s.xml">
       <configuration name="Main.testPre" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="Main_testPre - 2018.12.13 at 22h 31m 49s.xml">
+      <configuration name="Main.testPre" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48099000" />
+    <option name="totallyTimeSpent" value="49960000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -501,7 +499,7 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.43966943" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3289256" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2647504" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2647504" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -536,6 +534,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
           <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -645,13 +646,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn.edu.njupt/utils/uploadUtils/UploadUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn.edu.njupt/utils/opencvUtils/OpencvConstantUtils.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/cn.edu.njupt/utils/opencvUtils/GeneralOPencvUtils.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/cn.edu.njupt/utils/uploadUtils/Snowflake.java">
@@ -665,6 +659,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -771,13 +768,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn.edu.njupt/service/ImageHandleService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/测试样本/样本/1.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -791,41 +781,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn.edu.njupt/controller/CutImageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn.edu.njupt/controller/UploadFIleController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="37" column="30" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="-135" />
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn.edu.njupt/service/impl/ImageHandleServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="803">
-          <caret line="47" column="28" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -836,6 +796,13 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn.edu.njupt/utils/uploadUtils/UploadUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="517">
+          <caret line="32" column="30" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -851,8 +818,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn.edu.njupt/utils/opencvUtils/OpencvConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
+        <state relative-caret-position="-114">
           <caret line="18" column="59" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn.edu.njupt/controller/UploadFIleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="37" column="30" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn.edu.njupt/service/ImageHandleService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn.edu.njupt/controller/CutImageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-15">
+          <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn.edu.njupt/service/impl/ImageHandleServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="57" column="8" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

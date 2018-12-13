@@ -1,5 +1,6 @@
 package cn.edu.njupt.controller;
 
+import cn.edu.njupt.dto.Result;
 import cn.edu.njupt.service.ImageHandleService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -10,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.List;
 
 @Controller
 public class CutImageController {
@@ -23,13 +25,21 @@ public class CutImageController {
 
     @RequestMapping(value = "/cut")
     @ResponseBody
-    public String cut(HttpServletRequest request , @RequestParam String imgPath){
+    public Result<List<String>> cut(HttpServletRequest request , @RequestParam String imgPath){
+        Result<List<String>> result;
 
         System.out.println(imgPath);
 
-        imageHandleService.cut(imgPath);
+        List<String> data = imageHandleService.cut(imgPath);
 
-        return "SUCCESS";
+        if(data == null){
+            result = new Result<>(false , null , "不是一个有效的图像");
+        }else {
+            result = new Result<>(true, data, "");
+        }
+
+
+        return result;
     }
 
 }

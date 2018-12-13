@@ -24,4 +24,12 @@ public class UploadUtils {
         }
         return new File(path + "/" + fileName);
     }
+
+    public static String dirFactory(String filePath){
+        File path = new File(filePath);
+        if(!path.exists()){
+            path.mkdirs();
+        }
+        return path.toString() + "/";
+    }
 }
