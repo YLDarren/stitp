@@ -17,3 +17,7 @@
 `预处理后的图像`
 
 ![预处理后的图像](https://github.com/YLDarren/stitp/blob/master/%E6%B5%8B%E8%AF%95%E6%A0%B7%E6%9C%AC/%E6%A0%B7%E6%9C%AC/1.png)
+
+##### Centos7编译opencv3.4.1[https://www.jianshu.com/p/5498f31d0ffd](https://www.jianshu.com/p/5498f31d0ffd)
+
+##### 搭建opencv javaweb项目[https://www.jianshu.com/p/446b86cbd41d](https://www.jianshu.com/p/446b86cbd41d)
