@@ -1,9 +1,9 @@
 package cn.edu.njupt.utils.opencvUtils.ResizeUtils;
 
-import cn.edu.njupt.utils.opencvUtils.MathUtils.MathUtils;
-import org.opencv.core.Mat;
-import org.opencv.core.Rect;
-import org.opencv.core.Size;
+import cn.edu.njupt.utils.opencvUtils.ContoursUtils.ContoursUtils;
+import cn.edu.njupt.utils.opencvUtils.GeneralUtils.GeneralUtils;
+import cn.edu.njupt.utils.opencvUtils.RemoveNoiseUtils.RemoveNoiseUtils;
+import org.opencv.core.*;
 import org.opencv.imgproc.Imgproc;
 
 import java.util.List;
@@ -25,7 +25,14 @@ public class ResizeUtils {
 
 
     public static Mat resize(Mat src , Size dsize) {
-        src = trimImg(src);
+        try{
+            Mat temp = trimImg(src);
+            RemoveNoiseUtils.connectedRemoveNoise(temp , 200);
+            src = temp;
+        }catch (Exception e){
+            System.out.println(e);
+        }
+
         Mat dst = new Mat();
         // 区域插值(INTER_AREA):图像放大时类似于线性插值，图像缩小时可以避免波纹出现。
         Imgproc.resize(src, dst, dsize, 0, 0, Imgproc.INTER_AREA);
@@ -33,157 +40,152 @@ public class ResizeUtils {
     }
 
     /**
-     * 去除图像中的空白
+     * 聚集目标
      * @param src
      * @return
      */
-    private static Mat trimImg(Mat src){
-        List<Double> colList = MathUtils.avgColMat(src);//每一列的平均值
-        List<Double> rowList = MathUtils.avgRowMat(src);//每一行的平均值
+    public static Mat trimImg(Mat src){
+        //寻找轮廓
+        List<MatOfPoint> cons = ContoursUtils.findContours(GeneralUtils.canny(src));
 
-        double colAvg = MathUtils.getSumInList(colList) / colList.size();
-        double rowAvg = MathUtils.getSumInList(rowList) / rowList.size();
+        if(cons.size() <= 0){
+            //没有寻找到轮廓直接返回
+            return src;
+        }
 
-        int blankCol1 = -1;//空白列的关键分割点(左)
-        int blankCol2 = -1;//空白列的关键分割点(右)
-        int blankRow1 = -1;//空白行的关键分割点(上)
-        int blankRow2 = -1;//空白行的关键分割点(下)
+        int extend = 50;
 
-        int preValue = -1;
-        int curValue = -1;
-        int count = 0;
-        boolean b = true;
-        for(int i = 0 ; i < colList.size() ; i++){
+        //最大的矩形
+        MatOfPoint2f matOfPoint2f = new MatOfPoint2f(cons.get(cons.size() - 1).toArray());
+        RotatedRect maxrect = Imgproc.minAreaRect(matOfPoint2f);
+        Rect maxr = maxrect.boundingRect();
+        int x = maxr.x;
+        int y = maxr.y;
+        int width = maxr.width;
+        int height = maxr.height;
+
+        for(int i = cons.size() - 2 ; i >= 0 ; i--){
+            matOfPoint2f = new MatOfPoint2f(cons.get(i).toArray());
+            RotatedRect rect = Imgproc.minAreaRect(matOfPoint2f);
+            Rect r = rect.boundingRect();
+
+            boolean b = judgeRect(maxrect , rect);
+
             if(b == false){
                 break;
             }
-            if(colList.get(i) > colAvg){
-                //求空白列的关键分割点(左)
-                curValue = i;
-                if(preValue != -1){
-                    if(curValue - preValue == 1){
-                        //连续
-                        count ++;
-                    }else{
-                        //不连续
-                        if(count > 10){
-                            blankCol1 = 2 * i / 3;
-                            b = false;
-                        }
-                    }
 
-                }
-                preValue = i;
+            //整合矩形
+            if(r.x < x){
+                x = r.x;
             }
+            if(r.y < y){
+                y = r.y;
+            }
+            if(r.x + r.width > x + width){
+                width = r.x + r.width - x;
+            }
+            if(r.y + r.height > y + height){
+                height = r.y + r.height - y;
+            }
+
         }
 
-        preValue = -1;
-        curValue = -1;
-        count = 0;
-        b = true;
-        for(int i = colList.size() - 1 ; i >= 0 ; i--){
-            if(b == false){
-                break;
-            }
-            if(colList.get(i) > colAvg){
-                //求空白列的关键分割点(右)
-                curValue = i;
-                if(preValue != -1){
-                    if(curValue - preValue == -1){
-                        //连续
-                        count ++;
-                    }else{
-                        //不连续
-                        if(count > 10){
-                            blankCol2 = i + (colList.size() - i) / 3;
-                            b = false;
-                        }
-                    }
+        x = x - extend < 0 ? 0 : x - extend;
+        y = y - extend < 0 ? 0 : y - extend;
+        width = x + width + 2 * extend > src.width() ? src.width() - x : width + 2 * extend;
+        height = y + height + 2 * extend > src.height() ? src.height() - y : height + 2 * extend;
 
-                }
-                preValue = i;
-            }
-        }
+        Mat dst = new Mat(src , new Rect(x , y , width , height));
 
-
-        preValue = -1;
-        curValue = -1;
-        count = 0;
-        b = true;
-        for(int i = 0 ; i < rowList.size() ; i++){
-            if(rowList.get(i) > rowAvg){
-                //空白行的关键分割点(上)
-                if(b == false){
-                    break;
-                }
-                if(rowList.get(i) > rowAvg){
-                    curValue = i;
-                    if(preValue != -1){
-                        if(curValue - preValue == 1){
-                            //连续
-                            count ++;
-                        }else{
-                            //不连续
-                            if(count > 10){
-                                blankRow1 = i / 2;
-                                b = false;
-                            }
-                        }
-
-                    }
-                    preValue = i;
-                }
-            }
-        }
-
-        preValue = -1;
-        curValue = -1;
-        count = 0;
-        b = true;
-        for(int i = rowList.size() - 1 ; i >= 0 ; i--){
-            if(rowList.get(i) > rowAvg){
-                //空白行的关键分割点(下)
-                if(b == false){
-                    break;
-                }
-                if(rowList.get(i) > rowAvg){
-                    curValue = i;
-                    if(preValue != -1){
-                        if(curValue - preValue == -1){
-                            //连续
-                            count ++;
-                        }else{
-                            //不连续
-                            if(count > 10){
-                                blankRow2 = i + 2 * (rowList.size() - i) / 3;
-                                b = false;
-                            }
-                        }
-
-                    }
-                    preValue = i;
-                }
-            }
-        }
-
-
-        /**
-         * int blankCol1 = -1;//空白列的关键分割点(左)
-         *         int blankCol2 = -1;//空白列的关键分割点(右)
-         *         int blankRow1 = -1;//空白行的关键分割点(上)
-         *         int blankRow2 = -1;//空白行的关键分割点(下)
-         */
-        //选择感兴趣区域
-        blankCol1 = blankCol1 == -1 ? 0 : blankCol1;
-        blankCol2 = blankCol2 == -1 ? colList.size() : blankCol2;
-        blankRow1 = blankRow1 == -1 ? 0 : blankRow1;
-        blankRow2 = blankRow2 == -1 ? rowList.size() : blankRow2;
-
-
-        Mat temp = new Mat(src, new Rect(blankCol1 , blankRow1, blankCol2 - blankCol1, blankRow2 - blankRow1));
-        Mat t = new Mat();
-        temp.copyTo(t);
-
-        return t;
+        return dst;
     }
+
+    //判断矩形是否应该合并到最大矩形中
+    public static boolean judgeRect(RotatedRect maxRect , RotatedRect rect){
+        //先判断距离，再判断面积
+        int dis = countDistance(maxRect , rect);
+        if(dis == 0){
+            //相交，应该合并一起
+            return true;
+        }
+
+//        //大矩形的面积
+//        double maxArea = maxRect.boundingRect().area();
+        //小矩形的面积
+        double area = rect.boundingRect().area();
+
+        //最小矩形面积大于500，矩形之间的距离小于300，就应该合并在一起
+        if(area > 500 && dis < 300){
+            return true;
+        }
+
+        return false;
+    }
+
+
+    //判断两个矩形之间的最小距离
+    public static int countDistance(RotatedRect maxRect , RotatedRect rect){
+        //1、先判断矩形是否相交
+        boolean b = inRect(maxRect.boundingRect() , rect.boundingRect());
+
+        if(b == true){
+            //相交，距离为0
+            return 0;
+        }
+
+        //2、判断最小距离
+        int distence = Integer.MAX_VALUE;
+        Point[] points = new Point[4];
+        maxRect.points(points);
+
+        Point[] points1 = new Point[4];
+        rect.points(points1);
+
+        for(int i = 0 ; i < points.length ; i++){
+            for(int j = 0 ; j < points1.length ; j++){
+                int temp = (int)(Math.pow(points[i].x - points1[j].x , 2) + Math.pow(points[i].y - points1[j].y , 2));
+                if(distence * distence < temp){
+                    distence = (int)Math.sqrt(temp);
+                }
+            }
+        }
+
+        return distence;
+    }
+
+    //判断矩形是否在矩形内部
+    public static boolean inRect(Rect maxRect , Rect rect){
+        if(inRect(maxRect , rect.x , rect.y)){
+            return true;
+        }
+        if(inRect(maxRect , rect.x + rect.width , rect.y)){
+            return true;
+        }
+        if(inRect(maxRect , rect.x + rect.width , rect.y + rect.height)){
+            return true;
+        }
+        if(inRect(maxRect , rect.x , rect.y + rect.height)){
+            return true;
+        }
+        return false;
+    }
+
+    //判断一个点是否在矩形内部
+    public static boolean inRect(Rect rect , int x , int y){
+        if(x < rect.x){
+            return false;
+        }
+        if(y < rect.y){
+            return false;
+        }
+        if(x > rect.x + rect.width){
+            return false;
+        }
+        if(y > rect.y + rect.height){
+            return false;
+        }
+        return true;
+    }
+
 }

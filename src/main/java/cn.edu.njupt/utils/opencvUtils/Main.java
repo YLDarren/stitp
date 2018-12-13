@@ -32,8 +32,6 @@ public class Main {
 
             List<Mat> result = CutUtils.cutUtils(src);
 
-
-
             for(int j = 0 ; j < result.size() ; j++){
                 Mat dst = ResizeUtils.resize(result.get(j) , GeneralUtils.getDsize());
                 GeneralUtils.saveImg(dst , destPath + "cut-" + i +"-"+ j +".jpg");
