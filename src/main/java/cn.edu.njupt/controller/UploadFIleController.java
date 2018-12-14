@@ -62,8 +62,8 @@ public class UploadFIleController {
                 String relativePath = request.getSession().getServletContext()
                         .getRealPath(UploadUtils.RELATIVE_PATH);// 存放位置
 
-                //存放到绝对路径中
-                String absolutePath = UploadUtils.ABSOLUTE_PATH;
+                //TODO 存放到绝对路径中，需要更改的地方
+                String absolutePath = UploadUtils.getAbsolutePath(UploadUtils.WIN);
 
 
                 File relativeDestFile = UploadUtils.fileFactory(relativePath , filename);
@@ -89,8 +89,8 @@ public class UploadFIleController {
                     //..................................
 
 
-                    //构造返回对象
-                    result = new Result<>(true ,new UploadImageInfo(filename , UploadUtils.IMAGE_PREFIX_URL + filename , absoluteDestFile.toString()) , null);
+                    //TODO,构造返回对象 , 需要更改的地方
+                    result = new Result<>(true ,new UploadImageInfo(filename , UploadUtils.getImagePrefixUrl(UploadUtils.WIN) + filename , absoluteDestFile.toString()) , null);
                 } catch (IOException e) {
                     logger.error("文件写入失败: " + e.toString());
                     //构造返回对象

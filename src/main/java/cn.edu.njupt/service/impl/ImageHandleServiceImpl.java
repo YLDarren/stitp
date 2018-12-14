@@ -53,6 +53,7 @@ public class ImageHandleServiceImpl implements ImageHandleService {
 
         String fileName = file.getName().split("\\.")[0];
 
+        //TODO需要更改的地方
         String destPath = UploadUtils.dirFactory(OpencvConfig.getPATH("WIN") + fileName) + fileName;
         destPath = destPath.replaceAll("\\\\" , "/");
 

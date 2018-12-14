@@ -14,10 +14,9 @@ public class OpencvConfig {
     //切割后的图像保存路径
     private static final String WIN_PATH = "C:/Users/X240/Desktop/opencv/web/web/";
 
-    private static final String STITP_PATH = "";
+    private static final String STITP_PATH = "/home/stitp/javaData/cut/";
 
     private static final String YTO_PATH = "/usr/local/cut/";
-
 
     public static final String WIN = "WIN";
 
