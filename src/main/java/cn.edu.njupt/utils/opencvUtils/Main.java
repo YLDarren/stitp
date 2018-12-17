@@ -1,5 +1,6 @@
 package cn.edu.njupt.utils.opencvUtils;
 
+import cn.edu.njupt.configure.SystemVariables;
 import cn.edu.njupt.utils.opencvUtils.BinaryUtils.BinaryUtils;
 import cn.edu.njupt.utils.opencvUtils.CutUtils.CutUtils;
 import cn.edu.njupt.utils.opencvUtils.GeneralUtils.GeneralUtils;
@@ -15,7 +16,7 @@ public class Main {
 
     @Before
     public void init(){
-        System.load(OpencvConfig.getSystemFile(OpencvConfig.WIN));
+        System.load(SystemVariables.loadOpencvSystemFile());
     }
 
     @Test

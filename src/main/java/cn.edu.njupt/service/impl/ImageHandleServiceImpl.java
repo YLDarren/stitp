@@ -1,10 +1,10 @@
 package cn.edu.njupt.service.impl;
 
+import cn.edu.njupt.configure.SystemVariables;
 import cn.edu.njupt.service.ImageHandleService;
 import cn.edu.njupt.utils.opencvUtils.BinaryUtils.BinaryUtils;
 import cn.edu.njupt.utils.opencvUtils.CutUtils.CutUtils;
 import cn.edu.njupt.utils.opencvUtils.GeneralUtils.GeneralUtils;
-import cn.edu.njupt.utils.opencvUtils.OpencvConfig;
 import cn.edu.njupt.utils.opencvUtils.PreHandleUtils.PreHandleUtils;
 import cn.edu.njupt.utils.opencvUtils.ResizeUtils.ResizeUtils;
 import cn.edu.njupt.utils.uploadUtils.UploadUtils;
@@ -53,8 +53,8 @@ public class ImageHandleServiceImpl implements ImageHandleService {
 
         String fileName = file.getName().split("\\.")[0];
 
-        //TODO需要更改的地方
-        String destPath = UploadUtils.dirFactory(OpencvConfig.getPATH("WIN") + fileName) + fileName;
+        //
+        String destPath = UploadUtils.dirFactory(SystemVariables.saveImgCutPATH() + fileName) + fileName;
         destPath = destPath.replaceAll("\\\\" , "/");
 
         Mat src = GeneralUtils.matFactory(path);

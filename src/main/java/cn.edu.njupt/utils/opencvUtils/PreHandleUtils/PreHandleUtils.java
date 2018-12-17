@@ -1,15 +1,13 @@
 package cn.edu.njupt.utils.opencvUtils.PreHandleUtils;
 
-
+import cn.edu.njupt.configure.SystemVariables;
 import cn.edu.njupt.utils.opencvUtils.ContoursUtils.ContoursUtils;
 import cn.edu.njupt.utils.opencvUtils.GeneralUtils.GeneralUtils;
 import cn.edu.njupt.utils.opencvUtils.GrayUtils.GrayUtils;
-import cn.edu.njupt.utils.opencvUtils.OpencvConfig;
 import org.junit.Before;
 import org.junit.Test;
 import org.opencv.core.*;
 
-import java.util.Random;
 
 /**
  * 预处理类
@@ -93,7 +91,7 @@ public class PreHandleUtils {
 
     @Before
     public void init(){
-        System.load(OpencvConfig.getSystemFile(OpencvConfig.WIN));
+        System.load(SystemVariables.loadOpencvSystemFile());
     }
 
     @Test

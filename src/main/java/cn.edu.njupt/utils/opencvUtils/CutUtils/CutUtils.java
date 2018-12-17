@@ -1,10 +1,10 @@
 package cn.edu.njupt.utils.opencvUtils.CutUtils;
 
+import cn.edu.njupt.configure.SystemVariables;
 import cn.edu.njupt.utils.opencvUtils.BinaryUtils.BinaryUtils;
 import cn.edu.njupt.utils.opencvUtils.ContoursUtils.ContoursUtils;
 import cn.edu.njupt.utils.opencvUtils.GeneralUtils.GeneralUtils;
 import cn.edu.njupt.utils.opencvUtils.GrayUtils.GrayUtils;
-import cn.edu.njupt.utils.opencvUtils.OpencvConfig;
 import cn.edu.njupt.utils.opencvUtils.PaintUtils.PaintUtils;
 import cn.edu.njupt.utils.opencvUtils.RemoveNoiseUtils.RemoveNoiseUtils;
 import cn.edu.njupt.utils.opencvUtils.RotationUtils.RotationUtils;
@@ -251,7 +251,7 @@ public class CutUtils {
 
     @Before
     public void init(){
-        System.load(OpencvConfig.getSystemFile(OpencvConfig.WIN));
+        System.load(SystemVariables.loadOpencvSystemFile());
     }
 
     @Test

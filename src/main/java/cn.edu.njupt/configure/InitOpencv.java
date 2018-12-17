@@ -1,8 +1,5 @@
 package cn.edu.njupt.configure;
 
-
-import cn.edu.njupt.utils.opencvUtils.OpencvConfig;
-
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 
@@ -19,8 +16,7 @@ public class InitOpencv  implements ServletContextListener {
 
     @Override
     public void contextInitialized(ServletContextEvent arg0) {
-        //WIN/STITP/YTO；这个可以根据自己的情况自己定义
-        System.load(OpencvConfig.getSystemFile(OpencvConfig.WIN));
+        System.load(SystemVariables.loadOpencvSystemFile());
     }
 
 

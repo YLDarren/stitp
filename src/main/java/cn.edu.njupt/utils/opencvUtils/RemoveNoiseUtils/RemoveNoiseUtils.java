@@ -1,9 +1,9 @@
 package cn.edu.njupt.utils.opencvUtils.RemoveNoiseUtils;
 
+import cn.edu.njupt.configure.SystemVariables;
 import cn.edu.njupt.utils.opencvUtils.BinaryUtils.BinaryUtils;
 import cn.edu.njupt.utils.opencvUtils.GeneralUtils.GeneralUtils;
 import cn.edu.njupt.utils.opencvUtils.GrayUtils.GrayUtils;
-import cn.edu.njupt.utils.opencvUtils.OpencvConfig;
 import org.junit.Before;
 import org.junit.Test;
 import org.opencv.core.Mat;
@@ -232,7 +232,7 @@ public class RemoveNoiseUtils {
 
     @Before
     public void init(){
-        System.load(OpencvConfig.getSystemFile(OpencvConfig.WIN));
+        System.load(SystemVariables.loadOpencvSystemFile());
     }
 
     @Test

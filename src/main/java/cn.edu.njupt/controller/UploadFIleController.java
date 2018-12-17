@@ -1,6 +1,7 @@
 package cn.edu.njupt.controller;
 
 import cn.edu.njupt.bean.UploadImageInfo;
+import cn.edu.njupt.configure.SystemVariables;
 import cn.edu.njupt.dto.Result;
 import cn.edu.njupt.utils.uploadUtils.CheckImageUtils;
 import cn.edu.njupt.utils.uploadUtils.Snowflake;
@@ -60,10 +61,10 @@ public class UploadFIleController {
 
                 //先存在tomcat容器中
                 String relativePath = request.getSession().getServletContext()
-                        .getRealPath(UploadUtils.RELATIVE_PATH);// 存放位置
+                        .getRealPath(SystemVariables.RELATIVE_PATH);// 存放位置
 
-                //TODO 存放到绝对路径中，需要更改的地方
-                String absolutePath = UploadUtils.getAbsolutePath(UploadUtils.WIN);
+                // 存放到绝对路径中，需要更改的地方
+                String absolutePath = SystemVariables.saveImgAbsolutePath();
 
 
                 File relativeDestFile = UploadUtils.fileFactory(relativePath , filename);
@@ -90,7 +91,7 @@ public class UploadFIleController {
 
 
                     //TODO,构造返回对象 , 需要更改的地方
-                    result = new Result<>(true ,new UploadImageInfo(filename , UploadUtils.getImagePrefixUrl(UploadUtils.WIN) + filename , absoluteDestFile.toString()) , null);
+                    result = new Result<>(true ,new UploadImageInfo(filename , SystemVariables.getImagePrefixUrl() + filename , absoluteDestFile.toString().replaceAll("\\\\" , "/")) , null);
                 } catch (IOException e) {
                     logger.error("文件写入失败: " + e.toString());
                     //构造返回对象
