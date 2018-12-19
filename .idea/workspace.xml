@@ -7,151 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c907d1e7-54db-441d-84ae-deb3e6e79ef6" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn.edu.njupt/utils/httpUtils/PostPythonHttpUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/ev_cmdb/2018-12-19/debug-log.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/ev_cmdb/2018-12-19/debug-log.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn.edu.njupt/configure/SystemVariables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn.edu.njupt/configure/SystemVariables.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn.edu.njupt/controller/CutImageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn.edu.njupt/controller/CutImageController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn.edu.njupt/controller/UploadFIleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn.edu.njupt/controller/UploadFIleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn.edu.njupt/utils/uploadUtils/UploadUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn.edu.njupt/utils/uploadUtils/UploadUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/edu/njupt/bean/UploadImageInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/edu/njupt/configure/InitOpencv.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/edu/njupt/configure/SystemVariables.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/edu/njupt/controller/CutImageController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/edu/njupt/controller/UploadFIleController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/edu/njupt/dto/Result.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/edu/njupt/service/ImageHandleService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/edu/njupt/service/impl/ImageHandleServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/edu/njupt/utils/opencvUtils/BinaryUtils/BinaryUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/edu/njupt/utils/opencvUtils/ContoursUtils/ContoursUtils$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/edu/njupt/utils/opencvUtils/ContoursUtils/ContoursUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/edu/njupt/utils/opencvUtils/CutUtils/CutUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/edu/njupt/utils/opencvUtils/GeneralUtils/GeneralUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/edu/njupt/utils/opencvUtils/GrayUtils/GrayUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/edu/njupt/utils/opencvUtils/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/edu/njupt/utils/opencvUtils/MathUtils/MathUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/edu/njupt/utils/opencvUtils/PaintUtils/PaintUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/edu/njupt/utils/opencvUtils/PreHandleUtils/PreHandleUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/edu/njupt/utils/opencvUtils/RemoveNoiseUtils/RemoveNoiseUtils$Result.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/edu/njupt/utils/opencvUtils/RemoveNoiseUtils/RemoveNoiseUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/edu/njupt/utils/opencvUtils/ResizeUtils/ResizeUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/edu/njupt/utils/opencvUtils/RotationUtils/RotationUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/edu/njupt/utils/opencvUtils/WarpPerspectiveUtils/WarpPerspectiveUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/edu/njupt/utils/uploadUtils/CheckImageUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/edu/njupt/utils/uploadUtils/MyThread.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/edu/njupt/utils/uploadUtils/Snowflake.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/edu/njupt/utils/uploadUtils/UploadUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jdbc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/logback.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mybatis-config.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spring/spring-dao.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spring/spring-service.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spring/spring-web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/WEB-INF/classes/cn/edu/njupt/bean/UploadImageInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/WEB-INF/classes/cn/edu/njupt/configure/InitOpencv.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/WEB-INF/classes/cn/edu/njupt/configure/SystemVariables.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/WEB-INF/classes/cn/edu/njupt/controller/CutImageController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/WEB-INF/classes/cn/edu/njupt/controller/UploadFIleController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/WEB-INF/classes/cn/edu/njupt/dto/Result.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/WEB-INF/classes/cn/edu/njupt/service/ImageHandleService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/WEB-INF/classes/cn/edu/njupt/service/impl/ImageHandleServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/WEB-INF/classes/cn/edu/njupt/utils/opencvUtils/BinaryUtils/BinaryUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/WEB-INF/classes/cn/edu/njupt/utils/opencvUtils/ContoursUtils/ContoursUtils$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/WEB-INF/classes/cn/edu/njupt/utils/opencvUtils/ContoursUtils/ContoursUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/WEB-INF/classes/cn/edu/njupt/utils/opencvUtils/CutUtils/CutUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/WEB-INF/classes/cn/edu/njupt/utils/opencvUtils/GeneralUtils/GeneralUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/WEB-INF/classes/cn/edu/njupt/utils/opencvUtils/GrayUtils/GrayUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/WEB-INF/classes/cn/edu/njupt/utils/opencvUtils/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/WEB-INF/classes/cn/edu/njupt/utils/opencvUtils/MathUtils/MathUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/WEB-INF/classes/cn/edu/njupt/utils/opencvUtils/PaintUtils/PaintUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/WEB-INF/classes/cn/edu/njupt/utils/opencvUtils/PreHandleUtils/PreHandleUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/WEB-INF/classes/cn/edu/njupt/utils/opencvUtils/RemoveNoiseUtils/RemoveNoiseUtils$Result.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/WEB-INF/classes/cn/edu/njupt/utils/opencvUtils/RemoveNoiseUtils/RemoveNoiseUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/WEB-INF/classes/cn/edu/njupt/utils/opencvUtils/ResizeUtils/ResizeUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/WEB-INF/classes/cn/edu/njupt/utils/opencvUtils/RotationUtils/RotationUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/WEB-INF/classes/cn/edu/njupt/utils/opencvUtils/WarpPerspectiveUtils/WarpPerspectiveUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/WEB-INF/classes/cn/edu/njupt/utils/uploadUtils/CheckImageUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/WEB-INF/classes/cn/edu/njupt/utils/uploadUtils/MyThread.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/WEB-INF/classes/cn/edu/njupt/utils/uploadUtils/Snowflake.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/WEB-INF/classes/cn/edu/njupt/utils/uploadUtils/UploadUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/WEB-INF/classes/jdbc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/WEB-INF/classes/logback.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/WEB-INF/classes/mybatis-config.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/WEB-INF/classes/spring/spring-dao.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/WEB-INF/classes/spring/spring-service.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/WEB-INF/classes/spring/spring-web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/WEB-INF/lib/c3p0-0.9.1.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/WEB-INF/lib/commons-fileupload-1.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/WEB-INF/lib/commons-io-2.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/WEB-INF/lib/hamcrest-core-1.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/WEB-INF/lib/jackson-annotations-2.9.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/WEB-INF/lib/jackson-core-2.9.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/WEB-INF/lib/jackson-databind-2.9.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/WEB-INF/lib/jstl-1.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/WEB-INF/lib/junit-4.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/WEB-INF/lib/logback-classic-1.1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/WEB-INF/lib/logback-core-1.1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/WEB-INF/lib/mybatis-3.4.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/WEB-INF/lib/mybatis-spring-1.3.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/WEB-INF/lib/mysql-connector-java-5.1.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/WEB-INF/lib/opencv-3.4.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/WEB-INF/lib/slf4j-api-1.7.24.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/WEB-INF/lib/spring-aop-5.0.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/WEB-INF/lib/spring-beans-5.0.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/WEB-INF/lib/spring-context-5.0.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/WEB-INF/lib/spring-core-5.0.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/WEB-INF/lib/spring-expression-5.0.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/WEB-INF/lib/spring-jcl-5.0.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/WEB-INF/lib/spring-jdbc-5.0.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/WEB-INF/lib/spring-test-5.0.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/WEB-INF/lib/spring-tx-5.0.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/WEB-INF/lib/spring-web-5.0.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/WEB-INF/lib/spring-webmvc-5.0.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/WEB-INF/lib/standard-1.1.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/img/plus.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/js/jquery-3.3.1.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/upload/15432025326035.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/upload/1543202703912sq4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/upload/1543202761158sq1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/upload/1543202977699sq3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/upload/1543203157992sq3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/upload/1543203358795sq3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/upload/1543203650528sq3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/upload/1543221494109ra1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/upload/1543221570122ra1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/upload/1543243516976sq2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/upload/1543243700176sq2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/upload/1543243918485sq2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/upload/15432439527821.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/upload/15432441143851.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/upload/15432441372555.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/upload/15432464432335.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/upload/15432804465572.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/upload/15432805148176.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/upload/15432806485536.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/upload/15432808399665.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/upload/25195687822034944025.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/upload/2519571050441154561.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/upload/2519610520142028801.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/upload/2519615557039759361.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/upload/251984199866273792.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/upload/251984868484468736.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/upload/252029881415258112.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/upload/252029965397807104.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/upload/252030186202746880.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/upload/252030992956149760.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/upload/254573806164267008.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/upload/254574111429906432.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/upload/258149582788775936.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/upload/259123464660209664.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/upload/259124246973403136.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/upload15432018891282.png.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/upload15432021261401.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stitp/upload15432023653066.png" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -167,17 +25,26 @@
       <file leaf-file-name="CutImageController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/cn.edu.njupt/controller/CutImageController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
+            <state relative-caret-position="96">
               <caret line="38" selection-start-line="38" selection-end-line="38" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UploadFIleController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn.edu.njupt/controller/UploadFIleController.java">
+      <file leaf-file-name="UploadUtils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn.edu.njupt/utils/uploadUtils/UploadUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="63" column="72" selection-start-line="63" selection-start-column="72" selection-end-line="63" selection-end-column="72" />
+            <state relative-caret-position="96">
+              <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SystemVariables.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn.edu.njupt/configure/SystemVariables.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="35" column="10" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -193,15 +60,6 @@
                 <element signature="e#561#562#0" expanded="true" />
                 <element signature="e#586#587#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SystemVariables.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn.edu.njupt/configure/SystemVariables.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-770">
-              <caret line="29" column="11" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -265,8 +123,8 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/cn.edu.njupt/utils/httpUtils/PostPythonHttpUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn.edu.njupt/utils/uploadUtils/UploadUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn.edu.njupt/configure/SystemVariables.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn.edu.njupt/controller/UploadFIleController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn.edu.njupt/configure/SystemVariables.java" />
       </list>
     </option>
   </component>
@@ -370,63 +228,6 @@
               <item name="cn.edu.njupt" type="462c0819:PsiDirectoryNode" />
               <item name="configure" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="stitp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="stitp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cn.edu.njupt" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stitp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="stitp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cn.edu.njupt" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stitp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="stitp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cn.edu.njupt" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stitp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="stitp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cn.edu.njupt" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stitp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="stitp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cn.edu.njupt" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-              <item name="httpUtils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stitp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="stitp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cn.edu.njupt" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-              <item name="uploadUtils" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -467,7 +268,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.PostPythonHttpUtils">
+  <component name="RunManager" selected="Tomcat Server.stitp">
     <configuration name="PostPythonHttpUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cn.edu.njupt.utils.httpUtils.PostPythonHttpUtils" />
       <module name="stitp" />
@@ -684,7 +485,7 @@
       <workItem from="1545009102880" duration="724000" />
       <workItem from="1545009900520" duration="910000" />
       <workItem from="1545113280695" duration="602000" />
-      <workItem from="1545127846038" duration="6928000" />
+      <workItem from="1545127846038" duration="7651000" />
     </task>
     <servers />
   </component>
@@ -712,7 +513,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66390000" />
+    <option name="totallyTimeSpent" value="67113000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -746,9 +547,9 @@
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.43966943" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.43966943" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32838285" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32561985" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28971255" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -1042,20 +843,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn.edu.njupt/utils/uploadUtils/UploadUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn.edu.njupt/configure/SystemVariables.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-770">
-          <caret line="29" column="11" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn.edu.njupt/service/impl/ImageHandleServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="199">
@@ -1066,17 +853,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn.edu.njupt/utils/uploadUtils/UploadUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn.edu.njupt/controller/CutImageController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
+        <state relative-caret-position="96">
           <caret line="38" selection-start-line="38" selection-end-line="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn.edu.njupt/controller/UploadFIleController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="63" column="72" selection-start-line="63" selection-start-column="72" selection-end-line="63" selection-end-column="72" />
+        <state relative-caret-position="134">
+          <caret line="62" column="74" selection-start-line="62" selection-start-column="74" selection-end-line="62" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn.edu.njupt/configure/SystemVariables.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="35" column="10" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="10" />
         </state>
       </provider>
     </entry>

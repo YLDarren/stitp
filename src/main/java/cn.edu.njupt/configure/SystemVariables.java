@@ -20,9 +20,10 @@ public class SystemVariables {
     //切割后的图像保存路径
     private static final String WIN_PATH = "C:/Users/X240/Desktop/opencv/web/web/";
 
+    //TODO
     private static final String STITP_PATH = "/home/stitp/javaData/cut/";
 
-    private static final String YTO_PATH = "/usr/local/cut/";
+    private static final String YTO_PATH = "/usr/local/tomcat8-2/apache-tomcat-8.5.34/webapps/cut/";
 
     //图像上传后的保存路径
     //WIN
@@ -32,6 +33,7 @@ public class SystemVariables {
 
     //STITP
     private static final String STITP_ABSOLUTE_PATH = "/home/stitp/javaData/data/";
+    //TODO
     private static final String STITP_RELATIVE_PATH = "G:/tomcat8/apache-tomcat-8.0.53/webapps/upload/";//相对路径
     private static final String STITP_IMAGE_PREFIX_URL = "http://10.166.33.86:8080/upload/";
 
