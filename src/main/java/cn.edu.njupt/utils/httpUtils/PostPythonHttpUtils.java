@@ -1,5 +1,6 @@
 package cn.edu.njupt.utils.httpUtils;
 
+import cn.edu.njupt.configure.SystemVariables;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import org.springframework.http.*;
@@ -10,25 +11,24 @@ import org.springframework.web.client.RestTemplate;
  */
 public class PostPythonHttpUtils {
 
-    public static void postPython(String request){
+    public static String postPython(String request){
         RestTemplate restTemplate = new RestTemplate();
 
         //获取请求头
         HttpEntity<String> header = header(request);
 
-        ResponseEntity<String> responseEntity = restTemplate.postForEntity("http://39.108.188.185:8080/stitp/upload/", header , String.class);
+        ResponseEntity<String> responseEntity = restTemplate.postForEntity(SystemVariables.PYTHON_URL, header , String.class);
 
         int code = responseEntity.getStatusCodeValue();
 
-        String body = responseEntity.getBody();
+        if(code == 200){
+            return responseEntity.getBody();
+        }else{
+            return null;
+        }
 
-        JsonObject json = new JsonParser().parse(body).getAsJsonObject();
+//        JsonObject json = new JsonParser().parse(body).getAsJsonObject();
 
-        System.out.println(json.get("status"));
-
-        System.out.println(code);
-
-        System.out.println(body);
     }
 
     /**

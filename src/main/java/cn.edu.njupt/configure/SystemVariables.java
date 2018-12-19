@@ -50,6 +50,9 @@ public class SystemVariables {
 
     private static final String YTO = "YTO";
 
+    //python识别接口
+    public static final String PYTHON_URL = "http://10.166.33.86:5000/todos";
+
     /**
      * 加载opencv系统文件
      * @return
