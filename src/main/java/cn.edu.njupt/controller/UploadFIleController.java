@@ -61,7 +61,7 @@ public class UploadFIleController {
 
                 //先存在tomcat容器中
                 String relativePath = request.getSession().getServletContext()
-                        .getRealPath(SystemVariables.RELATIVE_PATH);// 存放位置
+                        .getRealPath(SystemVariables.saveImgRelavePATH());// 存放位置
 
                 // 存放到绝对路径中，需要更改的地方
                 String absolutePath = SystemVariables.saveImgAbsolutePath();

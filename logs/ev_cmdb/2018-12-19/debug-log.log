@@ -1,0 +1,20 @@
+2018-12-19 20:01:08.540 [main] DEBUG org.springframework.web.client.RestTemplate - Created POST request for "http://39.108.188.185:8080/stitp/upload/"
+2018-12-19 20:01:08.572 [main] DEBUG org.springframework.web.client.RestTemplate - Setting request Accept header to [text/plain, application/json, application/*+json, */*]
+2018-12-19 20:01:08.572 [main] DEBUG org.springframework.web.client.RestTemplate - Writing [] using [org.springframework.http.converter.StringHttpMessageConverter@15761df8]
+2018-12-19 20:01:08.915 [main] DEBUG org.springframework.web.client.RestTemplate - POST request for "http://39.108.188.185:8080/stitp/upload/" resulted in 200 (null)
+2018-12-19 20:01:08.915 [main] DEBUG org.springframework.web.client.RestTemplate - Reading [java.lang.String] as "application/json;charset=UTF-8" using [org.springframework.http.converter.StringHttpMessageConverter@15761df8]
+2018-12-19 20:05:16.398 [main] DEBUG org.springframework.web.client.RestTemplate - Created POST request for "http://39.108.188.185:8080/stitp/upload/"
+2018-12-19 20:05:16.398 [main] DEBUG org.springframework.web.client.RestTemplate - Setting request Accept header to [text/plain, application/json, application/*+json, */*]
+2018-12-19 20:05:16.398 [main] DEBUG org.springframework.web.client.RestTemplate - Writing [] using [org.springframework.http.converter.StringHttpMessageConverter@15761df8]
+2018-12-19 20:05:16.664 [main] DEBUG org.springframework.web.client.RestTemplate - POST request for "http://39.108.188.185:8080/stitp/upload/" resulted in 200 (null)
+2018-12-19 20:05:16.664 [main] DEBUG org.springframework.web.client.RestTemplate - Reading [java.lang.String] as "application/json;charset=UTF-8" using [org.springframework.http.converter.StringHttpMessageConverter@15761df8]
+2018-12-19 20:17:28.216 [main] DEBUG org.springframework.web.client.RestTemplate - Created POST request for "http://39.108.188.185:8080/stitp/upload/"
+2018-12-19 20:17:28.232 [main] DEBUG org.springframework.web.client.RestTemplate - Setting request Accept header to [text/plain, application/json, application/*+json, */*]
+2018-12-19 20:17:28.248 [main] DEBUG org.springframework.web.client.RestTemplate - Writing [] using [org.springframework.http.converter.StringHttpMessageConverter@1a0dcaa]
+2018-12-19 20:17:28.466 [main] DEBUG org.springframework.web.client.RestTemplate - POST request for "http://39.108.188.185:8080/stitp/upload/" resulted in 200 (null)
+2018-12-19 20:17:28.466 [main] DEBUG org.springframework.web.client.RestTemplate - Reading [java.lang.String] as "application/json;charset=UTF-8" using [org.springframework.http.converter.StringHttpMessageConverter@1a0dcaa]
+2018-12-19 20:22:25.635 [main] DEBUG org.springframework.web.client.RestTemplate - Created POST request for "http://39.108.188.185:8080/stitp/upload/"
+2018-12-19 20:22:25.635 [main] DEBUG org.springframework.web.client.RestTemplate - Setting request Accept header to [text/plain, application/json, application/*+json, */*]
+2018-12-19 20:22:25.635 [main] DEBUG org.springframework.web.client.RestTemplate - Writing [] as "application/json;charset=UTF-8" using [org.springframework.http.converter.StringHttpMessageConverter@7a52f2a2]
+2018-12-19 20:22:25.901 [main] DEBUG org.springframework.web.client.RestTemplate - POST request for "http://39.108.188.185:8080/stitp/upload/" resulted in 200 (null)
+2018-12-19 20:22:25.917 [main] DEBUG org.springframework.web.client.RestTemplate - Reading [java.lang.String] as "application/json;charset=UTF-8" using [org.springframework.http.converter.StringHttpMessageConverter@7a52f2a2]

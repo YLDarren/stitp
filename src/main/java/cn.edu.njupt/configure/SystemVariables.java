@@ -1,5 +1,7 @@
 package cn.edu.njupt.configure;
 
+import cn.edu.njupt.utils.uploadUtils.UploadUtils;
+
 /**
  * 系统环境变量统一配置类
  */
@@ -25,16 +27,18 @@ public class SystemVariables {
     //图像上传后的保存路径
     //WIN
     private static final String ABSOLUTE_PATH = "C:/Users/X240/Desktop/upload/";//绝对路径
-    public static final String RELATIVE_PATH = "/upload/";//相对路径
-    private static final String IMAGE_PREFIX_URL = "http://127.0.0.1:8080/stitp/upload/";//图片url前缀
+    private static final String RELATIVE_PATH = "G:/tomcat8/apache-tomcat-8.0.53/webapps/upload/";//相对路径
+    private static final String IMAGE_PREFIX_URL = "http://127.0.0.1:8080/upload/";//图片url前缀
 
     //STITP
     private static final String STITP_ABSOLUTE_PATH = "/home/stitp/javaData/data/";
-    private static final String STITP_IMAGE_PREFIX_URL = "http://10.166.33.86:8080/stitp/upload/";
+    private static final String STITP_RELATIVE_PATH = "G:/tomcat8/apache-tomcat-8.0.53/webapps/upload/";//相对路径
+    private static final String STITP_IMAGE_PREFIX_URL = "http://10.166.33.86:8080/upload/";
 
     //YTO
     private static final String YTO_ABSOLUTE_PATH = "/usr/local/data/";
-    private static final String YTO_IMAGE_PREFIX_URL = "http://39.108.188.185:8080/stitp/upload/";
+    private static final String YTO_RELATIVE_PATH = "/usr/local/tomcat8-2/apache-tomcat-8.5.34/webapps/upload/";//相对路径
+    private static final String YTO_IMAGE_PREFIX_URL = "http://39.108.188.185:8080/upload/";
 
 
     //标志
@@ -62,19 +66,19 @@ public class SystemVariables {
     }
 
     /**
-     * 获取图像保存的据对路径
+     * 获取图像保存的绝对路径
      * @return
      */
     public static String saveImgAbsolutePath(){
         switch (SYS_VARIABLE){
             case WIN:
-                return ABSOLUTE_PATH;
+                return UploadUtils.dirFactory(ABSOLUTE_PATH).replaceAll("\\\\" , "/");
             case STITP:
-                return STITP_ABSOLUTE_PATH;
+                return UploadUtils.dirFactory(STITP_ABSOLUTE_PATH).replaceAll("\\\\" , "/");
             case YTO:
-                return YTO_ABSOLUTE_PATH;
+                return UploadUtils.dirFactory(YTO_ABSOLUTE_PATH).replaceAll("\\\\" , "/");
             default:
-                return ABSOLUTE_PATH;
+                return UploadUtils.dirFactory(ABSOLUTE_PATH).replaceAll("\\\\" , "/");
         }
     }
 
@@ -102,13 +106,30 @@ public class SystemVariables {
     public static String saveImgCutPATH(){
         switch (SYS_VARIABLE){
             case WIN:
-                return WIN_PATH;
+                return UploadUtils.dirFactory(WIN_PATH).replaceAll("\\\\" , "/");
             case STITP:
-                return STITP_PATH;
+                return UploadUtils.dirFactory(STITP_PATH).replaceAll("\\\\" , "/");
             case YTO:
-                return YTO_PATH;
+                return UploadUtils.dirFactory(YTO_PATH).replaceAll("\\\\" , "/");
             default:
-                return WIN_PATH;
+                return UploadUtils.dirFactory(WIN_PATH).replaceAll("\\\\" , "/");
+        }
+    }
+
+    /**
+     * 返回图像保存的相对路径
+     * @return
+     */
+    public static String saveImgRelavePATH(){
+        switch (SYS_VARIABLE){
+            case WIN:
+                return UploadUtils.dirFactory(RELATIVE_PATH).replaceAll("\\\\" , "/");
+            case STITP:
+                return UploadUtils.dirFactory(STITP_RELATIVE_PATH).replaceAll("\\\\" , "/");
+            case YTO:
+                return UploadUtils.dirFactory(YTO_RELATIVE_PATH).replaceAll("\\\\" , "/");
+            default:
+                return UploadUtils.dirFactory(RELATIVE_PATH).replaceAll("\\\\" , "/");
         }
     }
 

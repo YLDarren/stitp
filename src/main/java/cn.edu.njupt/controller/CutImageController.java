@@ -36,6 +36,7 @@ public class CutImageController {
             result = new Result<>(false , null , "不是一个有效的图像");
         }else {
             result = new Result<>(true, data, "");
+
         }
 
 
