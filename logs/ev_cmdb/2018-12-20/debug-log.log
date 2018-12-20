@@ -1,0 +1,8 @@
+2018-12-20 16:49:54.031 [main] DEBUG org.springframework.web.client.RestTemplate - Created POST request for "http://10.166.33.86:5000/todos"
+2018-12-20 16:49:54.066 [main] DEBUG org.springframework.web.client.RestTemplate - Setting request Accept header to [text/plain, application/json, application/*+json, */*]
+2018-12-20 16:49:54.071 [main] DEBUG org.springframework.web.client.RestTemplate - Writing [] as "application/json;charset=UTF-8" using [org.springframework.http.converter.StringHttpMessageConverter@8909f18]
+2018-12-20 16:49:54.402 [main] DEBUG org.springframework.web.client.RestTemplate - POST request for "http://10.166.33.86:5000/todos" resulted in 500 (INTERNAL SERVER ERROR); invoking error handler
+2018-12-20 18:18:27.029 [main] DEBUG org.springframework.web.client.RestTemplate - Created POST request for "http://10.166.33.86:5000/todos"
+2018-12-20 18:18:27.029 [main] DEBUG org.springframework.web.client.RestTemplate - Setting request Accept header to [text/plain, application/json, application/*+json, */*]
+2018-12-20 18:18:27.029 [main] DEBUG org.springframework.web.client.RestTemplate - Writing [] as "application/json;charset=UTF-8" using [org.springframework.http.converter.StringHttpMessageConverter@8909f18]
+2018-12-20 18:18:27.169 [main] DEBUG org.springframework.web.client.RestTemplate - POST request for "http://10.166.33.86:5000/todos" resulted in 500 (INTERNAL SERVER ERROR); invoking error handler

@@ -11,6 +11,13 @@ public class RedisDaoUtils {
 
     private final JedisPool jedisPool;
 
+    private final String IP = "127.0.0.1";
+    private final int PORT = 6379;
+
+    public RedisDaoUtils(){
+        jedisPool = new JedisPool(IP , PORT);
+    }
+
     public RedisDaoUtils(String ip , int port){
         jedisPool = new JedisPool(ip , port);
     }
@@ -38,10 +45,10 @@ public class RedisDaoUtils {
     }
 
     public static void main(String[] args) {
-        String ip = "127.0.0.1";
+        String ip = "10.166.33.86";
         int port = 6379;
         RedisDaoUtils utils = new RedisDaoUtils(ip , port);
-        String data = utils.getOCRData("njsid");
+        String data = utils.getOCRData("hello");
         System.out.println(data);
     }
 }

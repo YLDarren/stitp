@@ -11,6 +11,11 @@ import org.springframework.web.client.RestTemplate;
  */
 public class PostPythonHttpUtils {
 
+    /**
+     * 向python服务提交ocr识别
+     * @param request
+     * @return
+     */
     public static String postPython(String request){
         RestTemplate restTemplate = new RestTemplate();
 
@@ -51,5 +56,6 @@ public class PostPythonHttpUtils {
 
     public static void main(String[] args) {
         postPython("");
+
     }
 }
