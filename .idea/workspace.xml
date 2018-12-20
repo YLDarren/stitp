@@ -7,12 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c907d1e7-54db-441d-84ae-deb3e6e79ef6" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn.edu.njupt/configure/SystemVariables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn.edu.njupt/configure/SystemVariables.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn.edu.njupt/controller/CutImageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn.edu.njupt/controller/CutImageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn.edu.njupt/dto/PostObj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn.edu.njupt/dto/PostObj.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn.edu.njupt/utils/httpUtils/PostPythonHttpUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn.edu.njupt/utils/httpUtils/PostPythonHttpUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn.edu.njupt/utils/redisUtils/RedisDaoUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn.edu.njupt/utils/redisUtils/RedisDaoUtils.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -25,15 +21,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CutImageController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CutImageController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/cn.edu.njupt/controller/CutImageController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
+            <state relative-caret-position="-3373">
               <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
               <folding>
                 <element signature="e#2122#2123#0" expanded="true" />
                 <element signature="e#2187#2188#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19">
+              <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -125,6 +130,7 @@
         <option value="$PROJECT_DIR$/src/main/java/cn.edu.njupt/utils/httpUtils/PostPythonHttpUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn.edu.njupt/utils/redisUtils/RedisDaoUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn.edu.njupt/controller/CutImageController.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -197,55 +203,6 @@
               <item name="stitp" type="b2602c69:ProjectViewProjectNode" />
               <item name="stitp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stitp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="stitp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stitp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="stitp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stitp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="stitp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cn.edu.njupt" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stitp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="stitp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cn.edu.njupt" type="462c0819:PsiDirectoryNode" />
-              <item name="configure" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stitp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="stitp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cn.edu.njupt" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stitp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="stitp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cn.edu.njupt" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-              <item name="redisUtils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -505,7 +462,7 @@
       <workItem from="1545009102880" duration="724000" />
       <workItem from="1545009900520" duration="910000" />
       <workItem from="1545113280695" duration="602000" />
-      <workItem from="1545127846038" duration="22032000" />
+      <workItem from="1545127846038" duration="22363000" />
     </task>
     <servers />
   </component>
@@ -533,7 +490,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81494000" />
+    <option name="totallyTimeSpent" value="81825000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -569,7 +526,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.43966943" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32561985" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32561985" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28971255" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -784,9 +741,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn.edu.njupt/configure/InitOpencv.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
@@ -927,12 +881,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn.edu.njupt/controller/CutImageController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
+        <state relative-caret-position="-3373">
           <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
           <folding>
             <element signature="e#2122#2123#0" expanded="true" />
             <element signature="e#2187#2188#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
         </state>
       </provider>
     </entry>
