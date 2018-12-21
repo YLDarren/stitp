@@ -48,7 +48,7 @@ public class RedisDaoUtils {
         String ip = "10.166.33.86";
         int port = 6379;
         RedisDaoUtils utils = new RedisDaoUtils(ip , port);
-        String data = utils.getOCRData("hello");
+        String data = utils.getOCRData("RegResult:p4");
         System.out.println(data);
     }
 }

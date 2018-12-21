@@ -1,0 +1,1 @@
+2018-12-20 22:45:43.091 [main] ERROR cn.edu.njupt.utils.redisUtils.RedisDaoUtils - JedisPool中获取连接发生异常: redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool

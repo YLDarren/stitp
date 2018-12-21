@@ -40,8 +40,6 @@ public class CutImageController {
     public Result<List<Integer>> cut(HttpServletRequest request , @RequestParam String imgPath){
         Result<List<Integer>> result;
 
-        System.out.println(imgPath);
-
         List<String> data = imageHandleService.cut(imgPath);
 
         if(data == null){
@@ -52,9 +50,6 @@ public class CutImageController {
             score.add(20);
             score.add(10);
             score.add(10);
-            score.add(30);
-            score.add(15);
-            score.add(15);
             score.add(100);
 
             //主控函数
@@ -88,11 +83,11 @@ public class CutImageController {
         try{
             logger.info(responseData);
             JsonObject json = new JsonParser().parse(responseData).getAsJsonObject();
-            String status = json.get("status").toString();
+            String status = json.get("status").toString().replaceAll("\"","").trim();
             if("succeed".equals(status)){
                 //请求成功
-                String serial = json.get("serial").toString();
-                String time = json.get("time").toString();
+                String serial = json.get("serial").toString().replaceAll("\"" , "").trim();
+                String time = json.get("time").toString().replaceAll("\"" , "").trim();
                 int ntime = 5000;
                 //向redis服务获取数据
                 try{

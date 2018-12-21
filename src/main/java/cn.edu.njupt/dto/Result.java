@@ -42,4 +42,17 @@ public class Result<T> implements Serializable {
     public void setReason(String reason) {
         this.reason = reason;
     }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("{");
+        sb.append("\"status\":")
+                .append(status);
+        sb.append(",\"data\":")
+                .append(data);
+        sb.append(",\"reason\":\"")
+                .append(reason).append('\"');
+        sb.append('}');
+        return sb.toString();
+    }
 }
