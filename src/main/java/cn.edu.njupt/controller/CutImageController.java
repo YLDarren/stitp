@@ -81,13 +81,15 @@ public class CutImageController {
         Result<List<Integer>> result;
         //json解析
         try{
-            logger.info(responseData);
+            logger.info("python服务请求: "+responseData);
             JsonObject json = new JsonParser().parse(responseData).getAsJsonObject();
             String status = json.get("status").toString().replaceAll("\"","").trim();
             if("succeed".equals(status)){
                 //请求成功
                 String serial = json.get("serial").toString().replaceAll("\"" , "").trim();
+
                 String time = json.get("time").toString().replaceAll("\"" , "").trim();
+
                 int ntime = 5000;
                 //向redis服务获取数据
                 try{
@@ -105,6 +107,8 @@ public class CutImageController {
 
                 json = new JsonParser().parse(redisData).getAsJsonObject();
 
+                logger.info("redis服务获取数据: " + json);
+
                 Boolean isSucess = true;
                 int redisCount = 0;
                 try{
@@ -117,8 +121,9 @@ public class CutImageController {
 
                 if(isSucess){
                     //数据解析成功
+                    System.out.println("redis数据解析成功");
                     List<Integer> redisResult = new ArrayList<>();
-                    for(int i = 0 ; i < redisCount ; i++){
+                    for(int i = 1 ; i < redisCount ; i++){
                         redisResult.add(Integer.parseInt(json.get("result"+i).toString()));
                     }
                     result = new Result<>(true , redisResult , null);
@@ -133,7 +138,7 @@ public class CutImageController {
             }
 
         }catch (Exception e){
-            result = new Result<>(false , null , "json解析错误，服务器异常");
+            result = new Result<>(false , null , "json解析错误，服务器异常: " + e.toString());
             logger.error("json解析错误: " + e.toString());
         }
         return result;
@@ -199,5 +204,21 @@ public class CutImageController {
         return postObj;
     }
 
+//    public static void main(String[] args) {
+//        List<Integer> score = new ArrayList<>();
+//        score.add(20);
+//        score.add(10);
+//        score.add(10);
+//        score.add(100);
+//        List<String> img = new ArrayList<>();
+//        img.add("/home/stitp/javaData/cut/p6/p6-0.jpg");
+//        img.add("/home/stitp/javaData/cut/p6/p6-1.jpg");
+//        img.add("/home/stitp/javaData/cut/p6/p6-2.jpg");
+//        img.add("/home/stitp/javaData/cut/p6/p6-3.jpg");
+//        img.add("/home/stitp/javaData/cut/p6/p6-4.jpg");
+//        img.add("/home/stitp/javaData/cut/p6/p6-5.jpg");
+//        img.add("/home/stitp/javaData/cut/p6/p6-6.jpg");
+//        System.out.println(cutMaster(img , score));
+//    }
 
 }
