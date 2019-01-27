@@ -17,12 +17,16 @@ public class SystemVariables {
 
     private static final String YTO_SYSTEM = "/usr/local/opencv/opencv-3.4.1/build/lib/libopencv_java341.so";
 
+    private static final String ALIYUN_SYSTEM = "/usr/local/src/opencv/opencv-3.4.1/build/lib/libopencv_java341.so";
+
     //切割后的图像保存路径
     private static final String WIN_PATH = "C:/Users/X240/Desktop/opencv/web/web/";
 
     private static final String STITP_PATH = "/home/stitp/apps/apache-tomcat-7.0.52/webapps/cut/";
 
     private static final String YTO_PATH = "/usr/local/tomcat8-2/apache-tomcat-8.5.34/webapps/cut/";
+
+    private static final String ALIYUN_PATH = "/usr/local/src/tomcat/tomcat8/apache-tomcat-8.5.37/webapps/cut/";
 
     //图像上传后的保存路径
     //WIN
@@ -41,6 +45,10 @@ public class SystemVariables {
     private static final String YTO_RELATIVE_PATH = "/usr/local/tomcat8-2/apache-tomcat-8.5.34/webapps/upload/";//相对路径
     private static final String YTO_IMAGE_PREFIX_URL = "http://39.108.188.185:8080/upload/";
 
+    //ALIYUN
+    private static final String ALIYUN_ABSOLUTE_PATH = "/usr/local/src/data/";
+    private static final String ALIYUN_RELATIVE_PATH = "/usr/local/src/tomcat/tomcat8/apache-tomcat-8.5.37/webapps/upload/";
+    private static final String ALIYUN_IMAGE_PREFIX_URL = "http://47.100.42.186:8080/upload/";
 
     //标志
     private static final String WIN = "WIN";
@@ -48,6 +56,8 @@ public class SystemVariables {
     private static final String STITP = "STITP";
 
     private static final String YTO = "YTO";
+
+    private static final String ALIYUN = "ALIYUN";
 
     //python识别接口
     public static final String PYTHON_URL = "http://10.166.33.86:5000/todos";
@@ -65,6 +75,8 @@ public class SystemVariables {
                 return STITP_SYSTEM;
             case YTO:
                 return YTO_SYSTEM;
+            case ALIYUN:
+                return ALIYUN_SYSTEM;
             default:
                 return WIN_SYSTEM;
         }
@@ -82,6 +94,8 @@ public class SystemVariables {
                 return UploadUtils.dirFactory(STITP_ABSOLUTE_PATH).replaceAll("\\\\" , "/");
             case YTO:
                 return UploadUtils.dirFactory(YTO_ABSOLUTE_PATH).replaceAll("\\\\" , "/");
+            case ALIYUN:
+                return UploadUtils.dirFactory(ALIYUN_ABSOLUTE_PATH).replaceAll("\\\\" , "/");
             default:
                 return UploadUtils.dirFactory(ABSOLUTE_PATH).replaceAll("\\\\" , "/");
         }
@@ -99,6 +113,8 @@ public class SystemVariables {
                 return STITP_IMAGE_PREFIX_URL;
             case YTO:
                 return YTO_IMAGE_PREFIX_URL;
+            case ALIYUN:
+                return ALIYUN_IMAGE_PREFIX_URL;
             default:
                 return IMAGE_PREFIX_URL;
         }
@@ -116,6 +132,8 @@ public class SystemVariables {
                 return UploadUtils.dirFactory(STITP_PATH).replaceAll("\\\\" , "/");
             case YTO:
                 return UploadUtils.dirFactory(YTO_PATH).replaceAll("\\\\" , "/");
+            case ALIYUN:
+                return UploadUtils.dirFactory(ALIYUN_PATH).replaceAll("\\\\" , "/");
             default:
                 return UploadUtils.dirFactory(WIN_PATH).replaceAll("\\\\" , "/");
         }
@@ -133,6 +151,8 @@ public class SystemVariables {
                 return UploadUtils.dirFactory(STITP_RELATIVE_PATH).replaceAll("\\\\" , "/");
             case YTO:
                 return UploadUtils.dirFactory(YTO_RELATIVE_PATH).replaceAll("\\\\" , "/");
+            case ALIYUN:
+                return UploadUtils.dirFactory(ALIYUN_RELATIVE_PATH).replaceAll("\\\\" , "/");
             default:
                 return UploadUtils.dirFactory(RELATIVE_PATH).replaceAll("\\\\" , "/");
         }
