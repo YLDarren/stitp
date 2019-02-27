@@ -43,12 +43,32 @@
             <input class="uploadImg" type="file" name="file" id="file">
         </div>
     </form>
+
+    <button id="btn">点击</button>
 </body>
 
 <script src="js/jquery-3.3.1.min.js"></script>
 <script>
     $(document).ready(function(){
         $("#file").on("change", upload );
+        
+        //绑定点击事件
+        $("#btn").click(function(){
+            $.ajax({
+                url: "/cutest",
+                type: "POST",
+                dataType: "json",
+                data:{
+                    imgPath:"http://123.com",
+                    score: [12,13,43]
+                },
+                success:function (data) {
+                    console.log(data);
+                }
+            })
+        });
+        
+        
     })
 
     function upload(){

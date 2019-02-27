@@ -47,11 +47,19 @@ public class CutImageController {
         }else {
             //向python服务提交识别数据
             List<Integer> score = new ArrayList<>();
-            score.add(20);
-            score.add(10);
-            score.add(10);
-            score.add(100);
+            String scores = request.getParameter("score");
 
+            if(score != null && !"".equals(scores)){
+                String[] strs = scores.replaceAll("\\D" , " ").trim().split(" ");
+                for(String s : strs){
+                    try{
+                        score.add(Integer.parseInt(s));
+                    }catch (Exception e){
+                        score.add(null);
+                    }
+
+                }
+            }
             //主控函数
             result = cutMaster(data , score);
         }
