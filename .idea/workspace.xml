@@ -7,9 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c907d1e7-54db-441d-84ae-deb3e6e79ef6" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn.edu.njupt/controller/CutTestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn.edu.njupt/controller/CutImageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn.edu.njupt/controller/CutImageController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -22,24 +20,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CutTestController.java" pinned="false" current-in-tab="false">
+    <leaf>
+      <file leaf-file-name="CutTestController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/cn.edu.njupt/controller/CutTestController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="32" column="72" lean-forward="true" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="72" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CutImageController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn.edu.njupt/controller/CutImageController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="61" column="13" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="13" />
+            <state relative-caret-position="180">
+              <caret line="28" column="31" lean-forward="true" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -50,8 +36,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="62" column="37" selection-start-line="62" selection-start-column="37" selection-end-line="62" selection-end-column="37" />
+            <state relative-caret-position="133">
+              <caret line="62" column="39" selection-start-line="62" selection-start-column="39" selection-end-line="62" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -119,9 +105,9 @@
         <option value="$PROJECT_DIR$/src/main/java/cn.edu.njupt/test/TestPythonService.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/cn.edu.njupt/configure/SystemVariables.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
         <option value="$PROJECT_DIR$/src/main/java/cn.edu.njupt/controller/CutTestController.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn.edu.njupt/controller/CutImageController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
       </list>
     </option>
   </component>
@@ -183,7 +169,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -238,7 +224,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -483,7 +469,8 @@
       <workItem from="1545443734270" duration="56000" />
       <workItem from="1545659853854" duration="1761000" />
       <workItem from="1548585750352" duration="2715000" />
-      <workItem from="1551192057858" duration="11786000" />
+      <workItem from="1551192057858" duration="13848000" />
+      <workItem from="1551837991525" duration="1531000" />
     </task>
     <servers />
   </component>
@@ -511,7 +498,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104036000" />
+    <option name="totallyTimeSpent" value="107629000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -524,7 +511,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -547,8 +533,8 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.43966943" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3250825" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2806354" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32231405" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28517398" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -807,9 +793,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
           <caret line="24" column="93" selection-start-line="24" selection-start-column="93" selection-end-line="24" selection-end-column="93" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -841,20 +824,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn.edu.njupt/configure/InitOpencv.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn.edu.njupt/configure/SystemVariables.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="153" column="24" selection-start-line="153" selection-start-column="24" selection-end-line="153" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.5.RELEASE/spring-web-5.0.5.RELEASE.jar!/org/springframework/web/bind/annotation/RequestParam.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-10">
@@ -862,27 +831,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn.edu.njupt/configure/InitOpencv.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="62" column="37" selection-start-line="62" selection-start-column="37" selection-end-line="62" selection-end-column="37" />
+        <state relative-caret-position="193">
+          <caret line="18" column="46" lean-forward="true" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn.edu.njupt/controller/CutTestController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn.edu.njupt/configure/SystemVariables.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="32" column="72" lean-forward="true" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="72" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="176">
+          <caret line="19" column="71" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="71" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn.edu.njupt/controller/CutImageController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
+        <state relative-caret-position="684">
           <caret line="61" column="13" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="62" column="39" selection-start-line="62" selection-start-column="39" selection-end-line="62" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn.edu.njupt/controller/CutTestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="28" column="31" lean-forward="true" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
