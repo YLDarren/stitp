@@ -149,15 +149,20 @@ function upload(){
         contentType: false, // 不设置内容类型
         success: function(data){
             console.log(data)
-            //设置背景
-            $(self).parent().css({
-                "background-image": "url("+data.url+")"
-            })
-
-            //把识别按钮设置成可点击
-            $('.shibie').attr('disabled',false);
-            $('.shibie').css({'background-color':'#B1FFFF' , 'color':'#317EF3' });
-            $('.loadBox').css('display' , 'none')
+            if(data.status === true){
+                //上传成功
+                //设置背景
+                $(self).parent().css({
+                    "background-image": "url("+data.data.url+")"
+                })
+                writeCookie('imgName' , data.data.imgName);
+                //把识别按钮设置成可点击
+                $('.shibie').attr('disabled',false);
+                $('.shibie').css({'background-color':'#B1FFFF' , 'color':'#317EF3' });
+                $('.loadBox').css('display' , 'none')
+            }else{
+                alert(data.reason)
+            }
         },
         error: function(error){
             console.log(error);

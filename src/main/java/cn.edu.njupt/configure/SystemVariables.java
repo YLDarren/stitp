@@ -20,7 +20,7 @@ public class SystemVariables {
     private static final String ALIYUN_SYSTEM = "/usr/local/src/opencv/opencv-3.4.1/build/lib/libopencv_java341.so";
 
     //切割后的图像保存路径
-    private static final String WIN_PATH = "C:/Users/X240/Desktop/opencv/web/web/";
+    private static final String WIN_PATH = "C:/Users/X240/Desktop/upload/cut/";
 
     private static final String STITP_PATH = "/home/stitp/apps/apache-tomcat-7.0.52/webapps/cut/";
 

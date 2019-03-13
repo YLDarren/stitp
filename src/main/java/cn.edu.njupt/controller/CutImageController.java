@@ -29,7 +29,7 @@ public class CutImageController {
     private static final String PREX = "RegResult:";
 
     //日志
-    private static final Logger logger = (Logger) LoggerFactory.getLogger(UploadFIleController.class);
+    private static final Logger logger = (Logger) LoggerFactory.getLogger(CutImageController.class);
 
     @Autowired
     private ImageHandleService imageHandleService;
