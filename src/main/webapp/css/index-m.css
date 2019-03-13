@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+li{
+    list-style: none;
+}
+.left {
+    float: left;
+}
+html {
+    background-color: #eee;
+}
+.box {
+    width: 100%;
+    margin: 0 auto;
+}
+.box h3 {
+    font-family: "Microsoft Himalaya";
+    text-align: center;
+    padding-top: 80px;
+    letter-spacing: 2px;
+    font-weight: 300;
+    font-size: 25px;
+}
+
+/*上传图片的盒子*/
+.box .upload-box {
+    width: 100%;
+    height: 180px;
+    padding: 20px 35px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.uploadImgBtn {
+    width: 100%;
+    height: 180px;
+    cursor: pointer;
+    position: relative;
+    background: url("./../img/placeholder-m.png") no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    box-shadow: 1px 1px 1px 1px rgba(255 , 255 , 255 , 0.6);
+
+}
+.uploadImgBtn .uploadImg {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/*输入成绩表格*/
+.box .score-table {
+    width: 100%;
+    padding: 50px 50px 30px 50px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.score-table table {
+    width: 100%;
+    table-layout: fixed;
+    border: 1px solid #303030;
+}
+table thead {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #303030;
+}
+table thead td {
+    border-right: 1px solid #303030;
+    text-align: center;
+}
+table tbody {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #303030;
+}
+table tbody td {
+    border-right: 1px solid #303030;
+    text-align: center;
+}
+table tbody td input {
+    border: none;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: #eee;
+}
+/*添加表格的按钮*/
+.score-table div {
+    width: 100%;
+    height: 45px;
+    border-radius: 15px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+.score-table div ul {
+    width: 100%;
+    height: 100%;
+}
+ul li {
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+ul li:nth-child(1){
+    background-color: #fff;
+}
+ul li:nth-child(2){
+    background-color: #F26C49;
+}
+li .common {
+    border: none;
+    width: 45%;
+    height: 45px;
+    font-size: 25px;
+    background-color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+}
+li .jia {
+    color: #B7D6EC;
+}
+li .jian {
+    color: #FFB84F;
+}
+li .jia:hover {
+    background-color: #B7D6EC;
+    color: #fff;
+}
+li .jian:hover {
+    background-color: #FFB84F;
+    color: #fff;
+}
+li .shibie {
+    border: none;
+    background-color: #B1FFFF;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color: #317EF3;
+    font-weight: 500;
+    cursor: pointer;
+}
+/*存放识别后的结果*/
+.box .resultBox {
+    width: 100%;
+    padding: 50px 50px 30px 50px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.resultBox table {
+    width: 100%;
+    table-layout: fixed;
+    border: 1px solid #303030;
+}
+/*加载效果*/
+.resultBox .loadBox {
+    width: 100%;
+}
+@keyframes k-lineF {
+    50%{
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+.loadBox .ring {
+    width: 35px;
+    height: 35px;
+    margin: 0 auto;
+    border: 3px dashed #505050;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    animation: k-lineF 1.5s 0s infinite;
+}
+.loadBox .wait {
+    margin: 10px auto;
+    text-align: center;
+    color: #858585;
+}
