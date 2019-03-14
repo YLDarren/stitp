@@ -12,11 +12,36 @@ $(document).ready(function () {
     //4、识别事件
     $('.shibie').click(identify);
 
+    //5、初始化
+    init();
+
 });
 
 //初始化事件
 function init() {
-    
+    var score = readCookie('scores');
+    if(score != null){
+        var titleList = ['一' , '二' , '三' , '四' , '五' , '六' , '七' , '八' , '九' , '十'];
+        var scores = score.split(",");
+        var thead = '<thead><tr><td>题号</td>';
+        var tbody = '<tbody><tr><td>分数</td>';
+        for(var i = 0 ; i < scores.length ; i++){
+            if(i === scores.length - 1){
+                thead += '<td>总分</td></tr></thead>';
+                tbody += '<td class="sumScore">'+scores[i]+'</td></tr></tbody>';
+            }else{
+                thead += '<td>'+(i < 10 ? titleList[i] : i + 1)+'</td>';
+                tbody += '<td><input type="text" value="'+scores[i]+'"></td>';
+            }
+        }
+        $('.score-table table').html(thead + tbody);
+        // '<thead>' +
+        // '<tr><td>题号</td><td>一</td><td>二</td><td>三</td><td>总分</td></tr>' +
+        // '</thead>' +
+        // '<tbody>' +
+        // '<tr><td>分数</td><td><input type="text" value=""></td><td><input type="text" value=""></td><td><input type="text" value=""></td><td class="sumScore">100</td></tr>' +
+        // '</tbody>'
+    }
 }
 
 //识别事件
@@ -25,8 +50,20 @@ function identify() {
     var scores = getScore();
 
     //2、向后端获取识别结果
-    identifyScores();
+    //2.1、获取上传到服务器的图像名字
+    var fileName = getUploadFileName();
+    if(fileName == null || !judgeNum(fileName)){
+        alert("请先上传图像");
+        //4、把按钮变灰
+        $('.shibie').attr('disabled',true);
+        $('.shibie').css({'background-color':'#7a7a7a' , 'color':'#474747' })
+        return;
+    }
 
+    //2.2获取识别结果
+    identifyScores(fileName , scores);
+
+    console.log(scores)
     //3、把成绩条写入到cookie中
     writeCookie('scores' , scores);
 
@@ -36,6 +73,13 @@ function identify() {
 
     //5、加载缓冲条
     $('.loadBox').css('display' , 'block')
+}
+
+//获取上传到服务器的图像名字
+function getUploadFileName() {
+    var fileName = readCookie('imgName');
+    fileName = fileName == null ? fileName : fileName.split('.')[0];
+    return fileName;
 }
 
 //写入cookie
@@ -49,13 +93,54 @@ function readCookie(key) {
 }
 
 //向后端获取识别结果
-function identifyScores() {
-    
+function identifyScores(fileName , scores) {
+    $.ajax({
+        url: "/identify",
+        type: "post",
+        dataType: "json",
+        data: {
+            "imgName": fileName,
+            "scores": scores + ""
+        },
+        success: function(data){
+            if(data.isSucess){
+                var scores = [];
+                for(var i = 1 ; i <= data.count ; i++){
+                    scores.push(data['result'+i])
+                }
+                //把加载条隐藏掉
+                $('.loadBox').css('display' , 'none');
+
+                //把成绩渲染到页面中
+                if(score != null && scores.length != 0){
+                    var titleList = ['一' , '二' , '三' , '四' , '五' , '六' , '七' , '八' , '九' , '十'];
+                    var scores = score.split(",");
+                    var thead = '<thead><tr><td>题号</td>';
+                    var tbody = '<tbody><tr><td>分数</td>';
+                    for(var i = 0 ; i < scores.length ; i++){
+                        if(i === scores.length - 1){
+                            thead += '<td>总分</td></tr></thead>';
+                            tbody += '<td>'+scores[i]+'</td></tr></tbody>';
+                        }else{
+                            thead += '<td>'+(i < 10 ? titleList[i] : i + 1)+'</td>';
+                            tbody += '<td>'+scores[i]+'</td>';
+                        }
+                    }
+                    $('.resultBox table').html(thead + tbody);
+                }
+            }else{
+                alert(data.information)
+            }
+        },
+        error: function(error){
+            console.log(error);
+        }
+    })
 }
 
 //获取成绩条
 function getScore(){
-    var tbList = $('tbody tr td');
+    var tbList = $('.score-table table tbody tr td');
     var scores = [];
     for(var i = 1 ; i < tbList.length ; i++){
         scores.push(i == tbList.length - 1 ? $(tbList.get(i)).html() : $(tbList.get(i).children).val());
@@ -66,8 +151,8 @@ function getScore(){
 //添加表格事件
 function addTable() {
     var titleList = ['一' , '二' , '三' , '四' , '五' , '六' , '七' , '八' , '九' , '十'];
-    var thList = $('thead tr td');
-    var tbList = $('tbody tr td');
+    var thList = $('.score-table table thead tr td');
+    var tbList = $('.score-table table tbody tr td');
     var thLen = thList.length;
     var tdLen = tbList.length;
     if(thLen === tdLen){
@@ -76,12 +161,14 @@ function addTable() {
         $(thList.get(thLen - 2)).after('<td>'+title+'</td>');
         $(tbList.get(tdLen - 2)).after('<td><input type="text" value=""></td>');
     }
+    //统计总分
+    sumScores();
 }
 
 //减少表格事件
 function delTable() {
-    var thList = $('thead tr td');
-    var tbList = $('tbody tr td');
+    var thList = $('.score-table table thead tr td');
+    var tbList = $('.score-table table tbody tr td');
     var thLen = thList.length;
     var tdLen = tbList.length;
     if(thLen === tdLen && thLen > 2){
@@ -89,6 +176,8 @@ function delTable() {
         $(thList.get(thLen - 2)).remove();
         $(tbList.get(tdLen - 2)).remove();
     }
+    //统计总分
+    sumScores();
 }
 
 //绑定输入事件

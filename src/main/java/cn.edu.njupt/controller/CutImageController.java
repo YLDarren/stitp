@@ -179,7 +179,7 @@ public class CutImageController {
         int count = 0;
         String responsedata = "";
         //构造的请求数据(json字符串)
-        String requestData = requestData = constructPythonData(constructPostObj(img , score));
+        String requestData = constructPythonData(constructPostObj(img , score));
         do{
             count++;
             //获取到的返回数据

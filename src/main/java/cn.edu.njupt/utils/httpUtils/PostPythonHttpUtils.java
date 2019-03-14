@@ -1,10 +1,15 @@
 package cn.edu.njupt.utils.httpUtils;
 
 import cn.edu.njupt.configure.SystemVariables;
+import cn.edu.njupt.dto.IdentifyRequestHead;
+import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import org.springframework.http.*;
 import org.springframework.web.client.RestTemplate;
+
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * 向python识别服务发送post请求
@@ -22,7 +27,7 @@ public class PostPythonHttpUtils {
         //获取请求头
         HttpEntity<String> header = header(request);
 
-        ResponseEntity<String> responseEntity = restTemplate.postForEntity(SystemVariables.PYTHON_URL, header , String.class);
+        ResponseEntity<String> responseEntity = restTemplate.postForEntity(SystemVariables.IDENTIFY_URL, header , String.class);
 
         int code = responseEntity.getStatusCodeValue();
 
@@ -31,7 +36,6 @@ public class PostPythonHttpUtils {
         }else{
             return null;
         }
-
 //        JsonObject json = new JsonParser().parse(body).getAsJsonObject();
 
     }
@@ -55,7 +59,27 @@ public class PostPythonHttpUtils {
     }
 
     public static void main(String[] args) {
-        postPython("");
 
+        String response = postPython(constructRequestHead(Arrays.asList("/home/stitp/pictures/0.jpg","/home/stitp/pictures/1.jpg","/home/stitp/pictures/2.jpg","/home/stitp/pictures/3.jpg") , Arrays.asList(12,23,66,11)));
+        JsonObject json = new JsonParser().parse(response).getAsJsonObject();
+
+        System.out.println(json);
+        System.out.println(json.get("status").toString().replaceAll("\"" , "").equals("succeed"));
+
+    }
+
+    //构造请求体
+    private static String constructRequestHead(List<String> fileList , List<Integer> scoreList){
+        IdentifyRequestHead head = new IdentifyRequestHead();
+        head.setCategory("1");
+        head.setImg(fileList);
+        head.setScore(scoreList);
+        head.setCount(fileList.size());
+        String[] values = fileList.get(0).replaceAll("\\\\" , "/").split("/");
+        String value = values[values.length - 2];
+        head.setKey(value);
+        head.setSerial(value);
+        head.setProportion(1);
+        return new Gson().toJson(head, IdentifyRequestHead.class);
     }
 }

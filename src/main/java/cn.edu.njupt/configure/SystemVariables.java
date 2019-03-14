@@ -61,6 +61,7 @@ public class SystemVariables {
 
     //python识别接口
     public static final String PYTHON_URL = "http://10.166.33.86:5000/todos";
+    public static final String IDENTIFY_URL = "http://10.166.33.86:5555/todos";
 //    public static final String PYTHON_URL = "http://192.168.43.237:5000/todos";
 
     /**

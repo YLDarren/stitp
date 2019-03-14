@@ -10,63 +10,65 @@
     <title>OCR手写数字识别</title>
 </head>
 <body>
-    <!--最外部的盒子定义一些共有属性-->
-    <div class="box">
-        <h3>OCR手写数字识别</h3>
+<!--最外部的盒子定义一些共有属性-->
+<div class="box">
+    <h3>OCR手写数字识别</h3>
 
-        <!--上传图片的盒子-->
-        <div class="upload-box">
-            <form id="formTag" enctype="multipart/form-data">
-                <div class="uploadImgBtn" id="uploadImgBtn">
-                    <input class="uploadImg" type="file" name="file" id="file">
-                </div>
-            </form>
+    <!--输入成绩表格-->
+    <div class="score-table">
+        <h4>请输入各题目的总分</h4>
+        <table>
+            <thead>
+            <tr><td>题号</td><td>一</td><td>二</td><td>三</td><td>总分</td></tr>
+            </thead>
+            <tbody>
+            <tr><td>分数</td><td><input type="text" value=""></td><td><input type="text" value=""></td><td><input type="text" value=""></td><td class="sumScore">100</td></tr>
+            </tbody>
+        </table>
+        <!--添加表格的按钮-->
+        <div>
+            <ul>
+                <li class="left">
+                    <button class="jian common"><-</button><button class="jia common">-></button>
+                </li>
+                <li class="left">
+                    <button class="shibie">识别</button>
+                </li>
+            </ul>
+
         </div>
-
-        <!--输入成绩表格-->
-        <div class="score-table">
-            <table>
-                <thead>
-                    <tr><td>题号</td><td>一</td><td>二</td><td>三</td><td>总分</td></tr>
-                </thead>
-                <tbody>
-                    <tr><td>分数</td><td><input type="text" value=""></td><td><input type="text" value=""></td><td><input type="text" value=""></td><td class="sumScore">100</td></tr>
-                </tbody>
-            </table>
-            <!--添加表格的按钮-->
-            <div>
-                <ul>
-                    <li class="left">
-                        <button class="jian common"><-</button><button class="jia common">-></button>
-                    </li>
-                    <li class="left">
-                        <button class="shibie">识别</button>
-                    </li>
-                </ul>
-
-            </div>
-        </div>
-
-        <!--存放识别后的结果-->
-        <div class="resultBox">
-            <!--加载效果-->
-            <div class="loadBox">
-                <div class="ring"></div>
-                <div class="wait">识别中，请稍等.....</div>
-            </div>
-
-            <!--<table>-->
-                <!--<thead>-->
-                <!--<tr><td>题号</td><td>一</td><td>二</td><td>三</td><td>总分</td></tr>-->
-                <!--</thead>-->
-                <!--<tbody>-->
-                <!--<tr><td>分数</td><td>12</td><td>43</td><td>23</td><td>78</td></tr>-->
-                <!--</tbody>-->
-            <!--</table>-->
-        </div>
-
-
     </div>
+
+
+    <!--上传图片的盒子-->
+    <div class="upload-box">
+        <form id="formTag" enctype="multipart/form-data">
+            <div class="uploadImgBtn" id="uploadImgBtn">
+                <input class="uploadImg" type="file" name="file" id="file">
+            </div>
+        </form>
+    </div>
+
+    <!--存放识别后的结果-->
+    <div class="resultBox">
+        <!--加载效果-->
+        <div class="loadBox">
+            <div class="ring"></div>
+            <div class="wait">识别中，请稍等.....</div>
+        </div>
+
+        <table>
+            <!--<thead>-->
+            <!--<tr><td>题号</td><td>一</td><td>二</td><td>三</td><td>总分</td></tr>-->
+            <!--</thead>-->
+            <!--<tbody>-->
+            <!--<tr><td>分数</td><td>12</td><td>43</td><td>23</td><td>78</td></tr>-->
+            <!--</tbody>-->
+        </table>
+    </div>
+
+
+</div>
 </body>
 
 <script src="js/jquery-3.3.1.min.js"></script>

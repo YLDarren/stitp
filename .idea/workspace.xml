@@ -7,11 +7,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c907d1e7-54db-441d-84ae-deb3e6e79ef6" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn.edu.njupt/controller/IdentifyController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn.edu.njupt/dto/IdentifyRequestHead.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn.edu.njupt/configure/SystemVariables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn.edu.njupt/configure/SystemVariables.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn.edu.njupt/controller/CutImageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn.edu.njupt/controller/CutImageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn.edu.njupt/controller/UploadFIleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn.edu.njupt/controller/UploadFIleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn.edu.njupt/controller/IdentifyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn.edu.njupt/controller/IdentifyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn.edu.njupt/utils/httpUtils/PostPythonHttpUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn.edu.njupt/utils/httpUtils/PostPythonHttpUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/index-m.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/index-m.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -28,35 +33,31 @@
       <file leaf-file-name="IdentifyController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/cn.edu.njupt/controller/IdentifyController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+            <state relative-caret-position="-129">
+              <caret line="112" column="49" selection-start-line="112" selection-start-column="49" selection-end-line="112" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2433#2434#0" expanded="true" />
-                <element signature="e#2482#2483#0" expanded="true" />
+                <element signature="e#3431#3432#0" expanded="true" />
+                <element signature="e#3499#3500#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="64" column="24" lean-forward="true" selection-start-line="57" selection-start-column="16" selection-end-line="64" selection-end-column="24" />
+            <state relative-caret-position="237">
+              <caret line="60" column="23" selection-start-line="60" selection-start-column="16" selection-end-line="65" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Result.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn.edu.njupt/dto/Result.java">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
-              <folding>
-                <element signature="e#431#432#0" expanded="true" />
-                <element signature="e#460#461#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="631">
+              <caret line="114" column="54" selection-start-line="114" selection-start-column="54" selection-end-line="114" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -64,26 +65,21 @@
       <file leaf-file-name="CutImageController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/cn.edu.njupt/controller/CutImageController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="47" column="29" lean-forward="true" selection-start-line="47" selection-start-column="29" selection-end-line="47" selection-end-column="29" />
+            <state relative-caret-position="-1272">
+              <caret line="28" column="52" lean-forward="true" selection-start-line="25" selection-start-column="4" selection-end-line="28" selection-end-column="52" />
+              <folding>
+                <element signature="e#6575#6576#0" expanded="true" />
+                <element signature="e#6640#6641#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ImageHandleServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn.edu.njupt/service/impl/ImageHandleServiceImpl.java">
+      <file leaf-file-name="PostPythonHttpUtils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn.edu.njupt/utils/httpUtils/PostPythonHttpUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="56" column="74" selection-start-line="56" selection-start-column="74" selection-end-line="56" selection-end-column="74" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="157" column="59" lean-forward="true" selection-start-line="157" selection-start-column="59" selection-end-line="157" selection-end-column="59" />
+            <state relative-caret-position="96">
+              <caret line="65" column="31" selection-start-line="65" selection-start-column="31" selection-end-line="65" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -143,7 +139,6 @@
         <option value="$PROJECT_DIR$/src/main/java/cn.edu.njupt/utils/httpUtils/GetPythonDataUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn.edu.njupt/utils/uploadUtils/UploadUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn.edu.njupt/dto/PostObj.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn.edu.njupt/utils/httpUtils/PostPythonHttpUtils.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/java/cn.edu.njupt/utils/redisUtils/RedisDaoUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn.edu.njupt/dto/Result.java" />
@@ -151,11 +146,15 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/cn.edu.njupt/controller/CutTestController.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn.edu.njupt/controller/UploadFIleController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn.edu.njupt/controller/CutImageController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/index.js" />
-        <option value="$PROJECT_DIR$/src/main/java/cn.edu.njupt/controller/IdentifyController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/index.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/index-m.css" />
+        <option value="$PROJECT_DIR$/src/main/java/cn.edu.njupt/dto/IdentifyRequestHead.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn.edu.njupt/configure/SystemVariables.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn.edu.njupt/controller/CutImageController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn.edu.njupt/utils/httpUtils/PostPythonHttpUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn.edu.njupt/controller/IdentifyController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/index.js" />
       </list>
     </option>
   </component>
@@ -267,6 +266,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="cn.edu.njupt" type="462c0819:PsiDirectoryNode" />
+              <item name="dto" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stitp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stitp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn.edu.njupt" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -301,6 +309,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stitp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stitp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -317,7 +333,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -343,7 +359,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.stitp">
+  <component name="RunManager" selected="Application.PostPythonHttpUtils">
     <configuration name="CutImageController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cn.edu.njupt.controller.CutImageController" />
       <module name="stitp" />
@@ -522,10 +538,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PostPythonHttpUtils" />
         <item itemvalue="Application.CutImageController" />
         <item itemvalue="Application.TestPythonService" />
         <item itemvalue="Application.RedisDaoUtils" />
-        <item itemvalue="Application.PostPythonHttpUtils" />
         <item itemvalue="Application.PostObj" />
       </list>
     </recent_temporary>
@@ -557,7 +573,7 @@
       <workItem from="1551192057858" duration="13848000" />
       <workItem from="1551837991525" duration="2188000" />
       <workItem from="1552375851680" duration="644000" />
-      <workItem from="1552470348781" duration="4693000" />
+      <workItem from="1552470348781" duration="17155000" />
     </task>
     <servers />
   </component>
@@ -585,7 +601,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113623000" />
+    <option name="totallyTimeSpent" value="126085000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -646,21 +662,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn.edu.njupt/service/TestService.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar!/javax/servlet/ServletContextListener.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://G:/opencv/opencv/build/java/opencv-341.jar!/org/opencv/core/Core.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="86">
@@ -827,20 +828,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn.edu.njupt/dto/PostObj.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn.edu.njupt/utils/httpUtils/PostPythonHttpUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="24" column="93" selection-start-line="24" selection-start-column="93" selection-end-line="24" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn.edu.njupt/utils/redisUtils/RedisDaoUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
@@ -906,13 +893,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="157" column="59" lean-forward="true" selection-start-line="157" selection-start-column="59" selection-end-line="157" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn.edu.njupt/bean/UploadImageInfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -927,27 +907,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn.edu.njupt/controller/CutImageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="47" column="29" lean-forward="true" selection-start-line="47" selection-start-column="29" selection-end-line="47" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn.edu.njupt/configure/SystemVariables.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="22" column="77" selection-start-line="22" selection-start-column="77" selection-end-line="22" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn.edu.njupt/service/impl/ImageHandleServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="56" column="74" selection-start-line="56" selection-start-column="74" selection-end-line="56" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn.edu.njupt/dto/Result.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
@@ -959,22 +918,120 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn.edu.njupt/controller/IdentifyController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+        <state relative-caret-position="517">
+          <caret line="215" lean-forward="true" selection-start-line="215" selection-end-line="215" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/index-m.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="517">
+          <caret line="208" column="1" selection-start-line="208" selection-start-column="1" selection-end-line="208" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn.edu.njupt/service/impl/ImageHandleServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="57" column="53" lean-forward="true" selection-start-line="57" selection-start-column="28" selection-end-line="57" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn.edu.njupt/dto/IdentifyRequestHead.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="812">
+          <caret line="85" column="18" selection-start-line="85" selection-start-column="18" selection-end-line="85" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2433#2434#0" expanded="true" />
-            <element signature="e#2482#2483#0" expanded="true" />
+            <element signature="e#760#761#0" expanded="true" />
+            <element signature="e#786#787#0" expanded="true" />
+            <element signature="e#830#831#0" expanded="true" />
+            <element signature="e#860#861#0" expanded="true" />
+            <element signature="e#899#900#0" expanded="true" />
+            <element signature="e#927#928#0" expanded="true" />
+            <element signature="e#976#977#0" expanded="true" />
+            <element signature="e#1010#1011#0" expanded="true" />
+            <element signature="e#1040#1041#0" expanded="true" />
+            <element signature="e#1066#1067#0" expanded="true" />
+            <element signature="e#1104#1105#0" expanded="true" />
+            <element signature="e#1134#1135#0" expanded="true" />
+            <element signature="e#1167#1168#0" expanded="true" />
+            <element signature="e#1196#1197#0" expanded="true" />
+            <element signature="e#1240#1241#0" expanded="true" />
+            <element signature="e#1276#1277#0" expanded="true" />
+            <element signature="e#1311#1312#0" expanded="true" />
+            <element signature="e#1342#1343#0" expanded="true" />
+            <element signature="e#1390#1391#0" expanded="true" />
+            <element signature="e#1430#1431#0" expanded="true" />
+            <element signature="e#1468#1469#0" expanded="true" />
+            <element signature="e#1501#1502#0" expanded="true" />
+            <element signature="e#1554#1555#0" expanded="true" />
+            <element signature="e#1598#1599#0" expanded="true" />
+            <element signature="e#1631#1632#0" expanded="true" />
+            <element signature="e#1659#1660#0" expanded="true" />
+            <element signature="e#1702#1703#0" expanded="true" />
+            <element signature="e#1736#1737#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn.edu.njupt/dto/PostObj.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="28" lean-forward="true" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn.edu.njupt/configure/SystemVariables.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="63" column="43" selection-start-line="63" selection-start-column="31" selection-end-line="63" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn.edu.njupt/controller/CutImageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1272">
+          <caret line="28" column="52" lean-forward="true" selection-start-line="25" selection-start-column="4" selection-end-line="28" selection-end-column="52" />
+          <folding>
+            <element signature="e#6575#6576#0" expanded="true" />
+            <element signature="e#6640#6641#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn.edu.njupt/utils/httpUtils/PostPythonHttpUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="65" column="31" selection-start-line="65" selection-start-column="31" selection-end-line="65" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn.edu.njupt/controller/IdentifyController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-129">
+          <caret line="112" column="49" selection-start-line="112" selection-start-column="49" selection-end-line="112" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3431#3432#0" expanded="true" />
+            <element signature="e#3499#3500#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="64" column="24" lean-forward="true" selection-start-line="57" selection-start-column="16" selection-end-line="64" selection-end-column="24" />
+        <state relative-caret-position="237">
+          <caret line="60" column="23" selection-start-line="60" selection-start-column="16" selection-end-line="65" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="631">
+          <caret line="114" column="54" selection-start-line="114" selection-start-column="54" selection-end-line="114" selection-end-column="54" />
         </state>
       </provider>
     </entry>
@@ -984,6 +1041,17 @@
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
           <splitter-proportions>
             <option name="proportions">
               <list>
