@@ -95,7 +95,7 @@ function readCookie(key) {
 //向后端获取识别结果
 function identifyScores(fileName , scores) {
     $.ajax({
-        url: "/identify",
+        url: "/stitp/identify",
         type: "post",
         dataType: "json",
         data: {
@@ -103,18 +103,32 @@ function identifyScores(fileName , scores) {
             "scores": scores + ""
         },
         success: function(data){
+            if(!data.status){
+                $('.loadBox').css('display' , 'none');
+                alert('服务异常，请稍后再试');
+                return;
+            }
+            data = data.data;
+            data = data.replace(/\"/gi , "'");
+            data = data.replace(/\'/gi , '"');
+            data = JSON.parse(data);
+
+            console.log(data)
+
             if(data.isSucess){
                 var scores = [];
                 for(var i = 1 ; i <= data.count ; i++){
                     scores.push(data['result'+i])
                 }
+
+                console.log(scores);
+
                 //把加载条隐藏掉
                 $('.loadBox').css('display' , 'none');
 
                 //把成绩渲染到页面中
-                if(score != null && scores.length != 0){
+                if(scores != null && scores.length != 0){
                     var titleList = ['一' , '二' , '三' , '四' , '五' , '六' , '七' , '八' , '九' , '十'];
-                    var scores = score.split(",");
                     var thead = '<thead><tr><td>题号</td>';
                     var tbody = '<tbody><tr><td>分数</td>';
                     for(var i = 0 ; i < scores.length ; i++){
@@ -129,11 +143,13 @@ function identifyScores(fileName , scores) {
                     $('.resultBox table').html(thead + tbody);
                 }
             }else{
+                $('.loadBox').css('display' , 'none');
                 alert(data.information)
             }
         },
         error: function(error){
-            console.log(error);
+            $('.loadBox').css('display' , 'none');
+            alert('网络异常，请稍后再试');
         }
     })
 }
@@ -229,7 +245,7 @@ function upload(){
     var self = this;
     //如果不理解我写的，可以看看我的前几篇文章
     $.ajax({
-        url: "/upload",
+        url: "/stitp/upload",
         type: "post",
         dataType: "json",
         cache: false,
@@ -237,7 +253,7 @@ function upload(){
         processData: false,// 不处理数据
         contentType: false, // 不设置内容类型
         success: function(data){
-            console.log(data)
+            console.log(data);
             if(data.status === true){
                 //上传成功
                 //设置背景

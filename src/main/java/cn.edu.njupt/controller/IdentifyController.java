@@ -75,7 +75,7 @@ public class IdentifyController {
     //识别接口
     @PostMapping(value = "/identify")
     @ResponseBody
-    public String identify(@RequestParam("imgName") String imgName , @RequestParam("scores") String scores) {
+    public Result<String> identify(@RequestParam("imgName") String imgName , @RequestParam("scores") String scores) {
         List<String> fileList = packImgFile(imgName);
         List<Integer> scoreList = packScores(scores);
 
@@ -105,8 +105,9 @@ public class IdentifyController {
          * 'result5': 5, 'proportion5': 0.38109913,
          * 'accuracy': 0}"
          */
-
-        return parseData(data);
+        data = data.replaceAll("\\\\" , "");
+        return new Result<>(true , parseData(data) , null);
+//        return new Result<>(true , parseData(data) , null);
     }
 
     //解析识别后的数据
@@ -115,7 +116,7 @@ public class IdentifyController {
             JsonObject json = new JsonParser().parse(data).getAsJsonObject();
             return json.toString();
         }catch (Exception e){
-            return "{\"isSucess\": \""+data+"\"}";
+            return "{\"isSucess\": 0 , \"information\": \""+data+"\"}";
         }
     }
 
@@ -247,7 +248,7 @@ public class IdentifyController {
             while(files.length == 0){
                 count++;
                 try {
-                    Thread.sleep(500);
+                    Thread.sleep(1000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
