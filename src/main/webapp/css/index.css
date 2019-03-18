@@ -160,7 +160,18 @@ li .shibie {
     font-weight: 500;
     cursor: pointer;
 }
-
+.upload-box .shibie {
+    margin: 30px auto;
+    float: right;
+    border: none;
+    width: 50%;
+    height: 50px;
+    font-size: 20px;
+    color: #317EF3;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: #B1FFFF;
+}
 /*存放识别后的结果*/
 .box .resultBox {
     width: 100%;

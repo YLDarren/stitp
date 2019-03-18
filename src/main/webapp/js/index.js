@@ -245,7 +245,7 @@ function upload(){
     var self = this;
     //如果不理解我写的，可以看看我的前几篇文章
     $.ajax({
-        url: "/stitp/upload",
+        url: "/upload",
         type: "post",
         dataType: "json",
         cache: false,
