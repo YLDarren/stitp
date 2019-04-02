@@ -104,8 +104,10 @@ function identifyScores(fileName , scores) {
         },
         success: function(data){
             if(!data.status){
+                $('.shibie').attr('disabled',false);
+                $('.shibie').css({'background-color':'#B1FFFF' , 'color':'#317EF3' });
                 $('.loadBox').css('display' , 'none');
-                alert('服务异常，请稍后再试');
+                alert('异常，请重新再试');
                 return;
             }
             data = data.data;
@@ -148,8 +150,10 @@ function identifyScores(fileName , scores) {
             }
         },
         error: function(error){
+            $('.shibie').attr('disabled',false);
+            $('.shibie').css({'background-color':'#B1FFFF' , 'color':'#317EF3' });
             $('.loadBox').css('display' , 'none');
-            alert('网络异常，请稍后再试');
+            alert('异常，请重新再试');
         }
     })
 }
