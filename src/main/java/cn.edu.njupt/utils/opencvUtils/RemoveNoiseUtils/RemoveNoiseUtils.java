@@ -141,9 +141,10 @@ public class RemoveNoiseUtils {
     /**
      * 连通域填充颜色
      * @param src
+     * @param type [true,false] true表示把小于阀值的填充为白色，false相反
      * @return
      */
-    public static Mat floodFill(Mat src ,double pArea){
+    public static Mat floodFill(Mat src ,double pArea , boolean type){
         if(src == null){
             return null;
         }
@@ -156,13 +157,16 @@ public class RemoveNoiseUtils {
                     // 用不同的颜色填充连接区域中的每个黑色点
                     // floodFill就是把与点(i , j)的所有相连通的区域都涂上color颜色
                     int area = Imgproc.floodFill(src, new Mat(), new Point(i, j), new Scalar(color));
-                    if(area <= pArea) {
-                        System.out.println(color);
-                        Imgproc.floodFill(src, new Mat(), new Point(i, j), new Scalar(255));
-                    }else {
-                        color++;
+                    if(type){
+                        if(area <= pArea) {
+                            Imgproc.floodFill(src, new Mat(), new Point(i, j), new Scalar(255));
+                        }
+                    }else{
+                        if(area > pArea){
+                            Imgproc.floodFill(src, new Mat(), new Point(i, j), new Scalar(255));
+                        }
                     }
-                    System.out.println(color);
+                    color++;
                 }
             }
         }

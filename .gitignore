@@ -4,3 +4,4 @@ src/main/java/cn.edu.njupt/dao/
 src/main/java/cn.edu.njupt/exception/
 src/main/java/cn.edu.njupt/test/
 src/main/resources/mapper/
+src/main/java/cn.edu.njupt/utils/opencvUtils/Main.java

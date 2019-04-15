@@ -1,5 +1,6 @@
 package cn.edu.njupt.utils.opencvUtils.ResizeUtils;
 
+import cn.edu.njupt.utils.opencvUtils.BinaryUtils.BinaryUtils;
 import cn.edu.njupt.utils.opencvUtils.ContoursUtils.ContoursUtils;
 import cn.edu.njupt.utils.opencvUtils.GeneralUtils.GeneralUtils;
 import cn.edu.njupt.utils.opencvUtils.RemoveNoiseUtils.RemoveNoiseUtils;
@@ -27,17 +28,104 @@ public class ResizeUtils {
     public static Mat resize(Mat src , Size dsize) {
         try{
             Mat temp = trimImg(src);
-            RemoveNoiseUtils.connectedRemoveNoise(temp , 200);
             src = temp;
         }catch (Exception e){
             System.out.println(e);
         }
 
+        src = clearWhite(src);
+
         Mat dst = new Mat();
         // 区域插值(INTER_AREA):图像放大时类似于线性插值，图像缩小时可以避免波纹出现。
         Imgproc.resize(src, dst, dsize, 0, 0, Imgproc.INTER_AREA);
+
+        //腐蚀
+        dst = GeneralUtils.erode(dst);
         return dst;
     }
+
+    /**
+     * 进一步去除空白
+     * 去除四周的空白
+     * @param src
+     * @return
+     */
+    private static Mat clearWhite(Mat src){
+        int width = GeneralUtils.getImgWidth(src) , height = GeneralUtils.getImgHeight(src);
+        int up , down , left , right , i , j;
+        up = down = left = right = 0;
+        boolean b = true;
+        //left
+        for(i = 0 ; i < width ; i++){
+            if(b){
+                for(j = 0 ; j < height ; j++){
+                    if(GeneralUtils.getPixel(src , j , i) != GeneralUtils.getWHITE()){
+                        b = false;
+                    }
+                }
+            }else{
+                break;
+            }
+            left++;
+        }
+
+        //right
+        b = true;
+        for(i = width - 1 ; i >= 0  ; i--){
+            if(b){
+                for(j = 0 ; j < height ; j++){
+                    if(GeneralUtils.getPixel(src , j , i) != GeneralUtils.getWHITE()){
+                        b = false;
+                    }
+                }
+            }else{
+                break;
+            }
+            right++;
+        }
+
+        //up
+        b = true;
+        for(i = 0 ; i < height ; i++){
+            if(b){
+                for(j = 0 ; j < width ; j++){
+                    if(GeneralUtils.getPixel(src , i , j) != GeneralUtils.getWHITE()){
+                        b = false;
+                    }
+                }
+            }else{
+                break;
+            }
+            up++;
+        }
+
+        //down
+        b = true;
+        for(i = height - 1 ; i >= 0 ; i--){
+            if(b){
+                for(j = 0 ; j < width ; j++){
+                    if(GeneralUtils.getPixel(src , i , j) != GeneralUtils.getWHITE()){
+                        b = false;
+                    }
+                }
+            }else{
+                break;
+            }
+            down++;
+        }
+
+
+        int w = width - (left + right) / 2;
+        int h = height - (up + down) / 2;
+
+        if(w > 0 && h > 0){
+            return new Mat(src , new Rect(left / 2 , up / 2 , w , h));
+        }else{
+            return src;
+        }
+
+    }
+
 
     /**
      * 聚集目标

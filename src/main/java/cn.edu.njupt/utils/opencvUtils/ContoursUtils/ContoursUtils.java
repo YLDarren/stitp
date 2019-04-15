@@ -27,7 +27,7 @@ public class ContoursUtils {
                 new Point(0, 0));
 
         if (contours.size() <= 0) {
-            throw new RuntimeException("未找到图像轮廓");
+            //throw new RuntimeException("未找到图像轮廓");
         } else {
             // 对contours进行了排序，按递增顺序
             contours.sort(new Comparator<MatOfPoint>() {
@@ -44,8 +44,9 @@ public class ContoursUtils {
                     return (int) (r1.area() - r2.area());
                 }
             });
-            return contours;
+
         }
+        return contours;
     }
 
     /**
